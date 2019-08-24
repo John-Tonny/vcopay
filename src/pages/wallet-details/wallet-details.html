@@ -24,9 +24,9 @@
         <div (longPress)="toggleBalance()">
           <div (tap)="updateAll(true)" *ngIf="!updateStatusError && !wallet.balanceHidden && !wallet.scanning && wallet.status">
             <div class="balance-str">{{wallet.status.totalBalanceStr}}</div>
-            <div class="balance-alt-str">
+            <!--div class="balance-alt-str">
               {{wallet.status.totalBalanceAlternative}} {{wallet.status.alternativeIsoCode}}
-            </div>
+            </div-->
           </div>
 
           <div class="balance-hidden" *ngIf="!updateStatusError && wallet.balanceHidden  && !wallet.scanning">
@@ -139,9 +139,9 @@
         <div class="title-icon larger-icon">
           <img src="assets/img/ghost-tongue-out.svg" />
         </div>
-        <div class="title-info">
+        <!--div class="title-info">
           <span translate>It's a ghost town in here</span>
-        </div>
+        </div-->
         <div class="subtitle-info">
           <span translate>If you have funds stored on a website then you should move them into a secure wallet... like this one!</span>
         </div>
@@ -247,7 +247,7 @@
               <ion-note item-end text-end>
                 <div class="amount">
                   <span [ngClass]="{'received': tx.action == 'received', 'staked': tx.action == 'staked'}" *ngIf="tx.action != 'invalid'">{{tx.amount |
-                    satToUnit: wallet.coin}}</span>
+                    satToUnit: wallet.coin=='part'?'VCL':wallet.coin}}</span>
                   <span class="double-spend" *ngIf="tx.action == 'invalid'" translate>(possible double spend)</span>
                 </div>
                 <div class="date">

@@ -536,6 +536,12 @@ export class HomePage {
           wallet.status.availableBalanceStr
         );
 
+        // johntonny
+        let pos = wallet.status.totalBalanceStr.indexOf('PART');
+        if(pos>=0){
+          wallet.status.totalBalanceStr = wallet.status.totalBalanceStr.substring(0,pos) + 'VCL';
+        }
+
         // Update recent transactions and txps
         this.updateTxps();
         this.getNotifications();
@@ -620,6 +626,13 @@ export class HomePage {
               wallet.id,
               wallet.status.availableBalanceStr
             );
+
+            // johntonny
+            let pos = wallet.status.totalBalanceStr.indexOf('PART');
+            if(pos>=0){
+              wallet.status.totalBalanceStr = wallet.status.totalBalanceStr.substring(0,pos) + 'VCL';
+            }
+
             return resolve();
           })
           .catch(err => {

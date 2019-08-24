@@ -5,11 +5,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: crowdin.com\n"
-"X-Crowdin-Project: particl-copay\n"
+"X-Crowdin-Project: vircle-copay\n"
 "X-Crowdin-Language: zh-CN\n"
 "X-Crowdin-File: template.pot\n"
-"Project-Id-Version: particl-copay\n"
-"Last-Translator: particl\n"
+"Project-Id-Version: vircle-copay\n"
+"Last-Translator: vircle\n"
 "Language-Team: Chinese Simplified\n"
 "Language: zh\n"
 "PO-Revision-Date: 2019-03-27 09:22\n"
@@ -29,14 +29,14 @@ msgstr "1. 点击 \"添加付款方式\", 然后选择 \"礼品卡\""
 msgid "2. Enter Gift Code"
 msgstr "2. 输入礼品代码"
 
-msgid "5-star ratings help us get the Particl Wallet into more hands, and more users means more resources can be committed to the app!"
-msgstr "五星级的评价有助于我们将PARTICL钱包让更多用户使用，更多的用户意味着更多的资源可以投入到应用中！"
+msgid "5-star ratings help us get the Vircle Wallet into more hands, and more users means more resources can be committed to the app!"
+msgstr "五星级的评价有助于我们将VIRCLE钱包让更多用户使用，更多的用户意味着更多的资源可以投入到应用中！"
 
 msgid "A total of {{amountAboveMaxSizeStr}} {{coin}} were excluded. The maximum size allowed for a transaction was exceeded."
 msgstr "总数为{{amountAboveMaxSizeStr}}{{coin}} 的交易已被拒绝。超过了交易允许的最大额度。"
 
 msgid "A total of {{amountBelowFeeStr}} {{coin}} were excluded. These funds come from UTXOs smaller than the network fee provided."
-msgstr "总数为{{amountBelowFeeStr}}{{coin}} 已被拒绝。UTXOs资金少于提供的网络手续费。"
+msgstr "总数为{{amountBelowFeeStr}}{{coin}} 已被拒绝。UTXOs积分少于提供的网络手续费。"
 
 msgid "A total of {{amountStr}} ({{fiatAmount | number:'1.2-2'}} {{currencyIsoCode}}) will be exchanged for {{withdrawalStr}} ({{fiatWithdrawal | number:'1.2-2'}} {{currencyIsoCode}})."
 msgstr "Tổng cộng {{amountStr}} ({{fiatAmount | number:'1.2-2'}} {{currencyIsoCode}}) sẽ được đổi thành {{withdrawalStr}} ({{fiatWithdrawal | number:'1.2-2'}} {{currencyIsoCode}})."
@@ -45,7 +45,7 @@ msgid "A total of {{fee}} {{coin}} were excluded. The maximum size allowed for a
 msgstr "总数为 {{fee}} {{coin}} 的交易已被拒绝。超过了交易允许的最大额度。"
 
 msgid "A total of {{fee}} {{coin}} were excluded. These funds come from UTXOs smaller than the network fee provided."
-msgstr "总数为 {{fee}} {{coin}} 的交易已被拒绝。UTXOs资金少于提供的网络手续费。"
+msgstr "总数为 {{fee}} {{coin}} 的交易已被拒绝。UTXOs积分少于提供的网络手续费。"
 
 msgid "About"
 msgstr "关于"
@@ -90,7 +90,7 @@ msgid "Add as a contact"
 msgstr "添加到联系人"
 
 msgid "Add funds"
-msgstr "添加资金"
+msgstr "添加积分"
 
 msgid "Add gift cards to your {appName} wallet from brands like Amazon, Delta, Google Play, and Uber."
 msgstr "将礼品卡添加到您的 {appName} 来自亚马逊、德尔塔、谷歌游戏和 uber 等品牌的钱包"
@@ -99,7 +99,7 @@ msgid "Add this BitPay account ({{email}})?"
 msgstr "添加该BitPay账户({{email}})?"
 
 msgid "Address"
-msgstr "比特币地址"
+msgstr "地址"
 
 msgid "Address Book"
 msgstr "地址簿"
@@ -117,7 +117,7 @@ msgid "Addresses"
 msgstr "地址"
 
 msgid "Addresses with balance"
-msgstr "有余额的地址"
+msgstr "有积分的地址"
 
 msgid "Advanced"
 msgstr "進階"
@@ -129,7 +129,7 @@ msgid "All addresses"
 msgstr "所有地址"
 
 msgid "All of your wallet balance may not be available for immediate spending."
-msgstr "您钱包的所有余额可能无法直接花费"
+msgstr "您钱包的所有积分可能无法直接花费"
 
 msgid "Allow camera access"
 msgstr "允许访问相机"
@@ -150,7 +150,7 @@ msgid "Amount"
 msgstr "数额"
 
 msgid "Amount Too Low To Spend"
-msgstr "Số tiền quá thấp để chi tiêu"
+msgstr "数额太小而不能消费"
 
 msgid "Amount below minimum allowed"
 msgstr "数额低于最低允许值"
@@ -162,7 +162,7 @@ msgid "Amount:"
 msgstr "量："
 
 msgid "Anyone with your recovery phrase can access or spend your funds."
-msgstr "任何有你的恢复短语的人都可以查看或花费你的资金。"
+msgstr "任何有你的助记词的人都可以查看或花费你的积分。"
 
 msgid "Apply changes"
 msgstr "应用更改"
@@ -231,43 +231,43 @@ msgid "Bad wallet invitation"
 msgstr "坏钱包邀请"
 
 msgid "Balance Hidden"
-msgstr "隐藏余额"
+msgstr "隐藏积分"
 
 msgid "Balance Transfer"
-msgstr "余额转账"
+msgstr "积分转账"
 
 msgid "Be sure to store your recovery phrase in a secure place. If this app is deleted, your money cannot be recovered without it."
-msgstr "Asegúrate de guardar la frase de recuperación en un lugar seguro. Si se elimina esta aplicación, no se podrá recuperar el dinero."
+msgstr "一定要把你的助记词放在一个安全的地方。如果这个应用程序被删除，没有它,你的积分将丢失."
 
 msgid "Because you are sending the maximum amount contained in this wallet, the {coinName} miner fee ({fee} {coin}) will be deducted from the total. {msg}"
-msgstr "Dado que va a enviar la cantidad máxima contenida en esta billetera, la comisión de la red {coinName} ({fee} {coin}) se deducirá del total. {msg}"
+msgstr "由于您将发送此钱包中包含的最大金额，网络手续费{fee} {coin}将从总金额中扣除. {msg}"
 
 msgid "Before retrieving your wallet address, it's recommended that you first write down your recovery phrase and store it securely so that your wallet can be recovered in the case your device was lost or stolen."
-msgstr "Before retrieving your wallet address, it's recommended that you first write down your paper key and store it securely so that your wallet can be recovered in the case your device was lost or stolen."
+msgstr "在找回你的钱包地址之前，建议你先把你的助记词写下来并妥善保管，这样你的钱包就可以在你的设备丢失或被盗的情况下被找回来."
 
 msgid "Below Minimum Amount"
-msgstr "En dessous du montant minimal"
+msgstr "低于最小数量"
 
 msgid "BitPay Card URI"
-msgstr "URI thẻ bitPay"
+msgstr "BitPay Card URI"
 
 msgid "Bitcoin Cash Address"
-msgstr "Địa chỉ Bitcoin Cash"
+msgstr "Bitcoin Cash 地址"
 
 msgid "Bitcoin Cash URI"
-msgstr "比特现金 URL"
+msgstr "积分 URL"
 
 msgid "Bitcoin Cash Wallets"
-msgstr "比特币现金钱包"
+msgstr "积分钱包"
 
 msgid "Bitcoin URI"
-msgstr "比特币URL"
+msgstr "积分URL"
 
 msgid "Bitcoin Wallets"
-msgstr "比特币钱包"
+msgstr "积分钱包"
 
 msgid "Brands"
-msgstr "Marchi"
+msgstr "品牌"
 
 msgid "Broadcast Payment"
 msgstr "广播支付"
@@ -285,13 +285,13 @@ msgid "Buy Gift Cards"
 msgstr "购买礼品卡"
 
 msgid "Buying Bitcoin..."
-msgstr "正在发送 比特币..."
+msgstr "正在发送 积分..."
 
 msgid "Buying Gift Card..."
 msgstr "正在购买礼品卡..."
 
-msgid "By providing your email address, you give explicit consent to Particl to use your email address to send you email notifications about payments."
-msgstr "您同意Particl向您发送有关付款的电子邮件通知到您提供的电子邮件地址。"
+msgid "By providing your email address, you give explicit consent to Vircle to use your email address to send you email notifications about payments."
+msgstr "您同意Vircle向您发送有关支付的电子邮件通知到您提供的电子邮件地址。"
 
 msgid "Calculating fee..."
 msgstr "费用计算中..."
@@ -324,7 +324,7 @@ msgid "Certified by"
 msgstr "通过认证："
 
 msgid "Change Amount"
-msgstr "Thay đổi nhiều"
+msgstr "更改账户"
 
 msgid "Change amount"
 msgstr "更改金额"
@@ -363,19 +363,19 @@ msgid "Coin"
 msgstr "币种"
 
 msgid "Coins staking"
-msgstr ""
+msgstr "冷收益"
 
 msgid "Cold Stake Zap"
-msgstr ""
+msgstr "冷收益Zap"
 
 msgid "Cold Staking"
-msgstr ""
+msgstr "冷收益"
 
 msgid "Cold Staking Setup"
-msgstr ""
+msgstr "冷收益设置"
 
-msgid "Cold staking allows you to get interest on your PART coins."
-msgstr ""
+msgid "Cold staking allows you to get interest on your VCL coins."
+msgstr "冷收益让您获得积分"
 
 msgid "Color"
 msgstr "颜色"
@@ -408,7 +408,7 @@ msgid "Confirming"
 msgstr "确认"
 
 msgid "Congratulations! It looks like you've recently received money. It's highly advised that you verify your recovery phrase so that your funds can be recovered in case your phone was lost or stolen."
-msgstr "Xin chúc mừng! Có vẻ như bạn vừa nhận được tiền. Chúng tôi khuyên bạn nên xác minh khóa giấy của mình để tiền của bạn có thể được phục hồi trong trường hợp điện thoại của bạn bị mất hoặc bị đánh cắp."
+msgstr "恭喜你!看起来你最近收到了积分。强烈建议您验证您的助记词，以便在您的手机丢失或被盗的情况下，您的积分可以恢复."
 
 msgid "Connect my BitPay Card"
 msgstr "连接我的BitPay卡"
@@ -441,7 +441,7 @@ msgid "Copay Session Logs. Be careful, this could contain sensitive private data
 msgstr "复制会话日志。小心, 这可能包含敏感的私有数据"
 
 msgid "Copay only supports Bitcoin Cash using new version numbers addresses"
-msgstr "Copay只支持新版本的比特币现金地址"
+msgstr "Copay只支持新版本的积分地址"
 
 msgid "Copayer already in this wallet"
 msgstr "Copayer 已经在这个钱包里"
@@ -456,7 +456,7 @@ msgid "Copayer joined"
 msgstr "Copayer 加入"
 
 msgid "Copied"
-msgstr "Đã sao chép"
+msgstr "复制"
 
 msgid "Copied to Clipboard"
 msgstr "复制到剪贴板"
@@ -471,7 +471,7 @@ msgid "Copied: {claimCode}"
 msgstr "复制: {claimCode}"
 
 msgid "Copy Code"
-msgstr "复制 %1 位联系人"
+msgstr "复制代码"
 
 msgid "Copy this text as it is to a safe place (notepad or email)"
 msgstr "将此文本复制到一个安全的地方 (记事本或电子邮件)"
@@ -507,7 +507,7 @@ msgid "Could not create using the specified extended public key"
 msgstr "无法使用指定的扩展的公钥创建"
 
 msgid "Could not create: Invalid wallet recovery phrase"
-msgstr "无法创建 ︰ 无效的钱包恢复短语"
+msgstr "无法创建 ︰ 无效的钱包助记词"
 
 msgid "Could not decrypt file, check your password"
 msgstr "无法解密文件，请检查你的密码"
@@ -569,8 +569,8 @@ msgstr "创建一个新的钱包"
 msgid "Create a new wallet to start using this app."
 msgstr "创建一个新钱包开始使用此应用程序。"
 
-msgid "Create particl wallet"
-msgstr "创建比特币的钱包"
+msgid "Create vircle wallet"
+msgstr "创建vircle的钱包"
 
 msgid "Create personal wallet"
 msgstr "创建个人钱包"
@@ -627,7 +627,7 @@ msgid "Deleting payment proposal..."
 msgstr "正在删除付款提议..."
 
 msgid "Delta Gift Cards can be used toward airfare on any Delta marketed flight through www.delta.com, at the airport, through reservations, or by phone with Delta Vacations®. Delta Gift Cards do not have any expiration dates or fees."
-msgstr "Las tarjetas de regalo de Delta pueden usarse para pasajes aéreos en cualquier vuelo comercializado por Delta a través de www.delta.com, en el aeropuerto, a través de reservaciones o por teléfono con Delta Vacations®. Las tarjetas de regalo de Delta no tienen fecha de vencimiento ni cargos adicionales."
+msgstr "达美礼品卡可用于达美航空通过www.delta.com销售的任何航班的机票，在机场，通过预订，或通过电话达美假期®。达美礼品卡没有任何到期日或费用."
 
 msgid "Deposit"
 msgstr "存款"
@@ -651,10 +651,10 @@ msgid "Disable"
 msgstr "禁用"
 
 msgid "Disable Cold Staking"
-msgstr ""
+msgstr "禁止冷收益"
 
 msgid "Disable Staking"
-msgstr ""
+msgstr "禁止收益"
 
 msgid "Disable notifications"
 msgstr "禁用通知"
@@ -702,7 +702,7 @@ msgid "Empty addresses limit reached. New addresses cannot be generated."
 msgstr "已达到空地址限制。无法生成新的地址。"
 
 msgid "Enable Cold Staking"
-msgstr ""
+msgstr "启用冷收益"
 
 msgid "Enable camera access in your device settings to get started."
 msgstr "相机中启用访问您的设备设置入门。"
@@ -723,10 +723,10 @@ msgid "Enable the camera to get started."
 msgstr "使该摄像机开始。"
 
 msgid "Encryption can protect your funds if this device is stolen or compromised by malicious software."
-msgstr "如果此设备被盗或被恶意软件破坏，加密可以保护您的资金。"
+msgstr "如果此设备被盗或被恶意软件破坏，加密可以保护您的积分。"
 
 msgid "Enter Amount"
-msgstr "Inserisci importo"
+msgstr "输入数量"
 
 msgid "Enter Two Factor for your BitPay account"
 msgstr "为您的BitPay帐户输入双重认证码"
@@ -801,7 +801,7 @@ msgid "Error pairing BitPay Account"
 msgstr "错误配对 BitPay 帐户"
 
 msgid "Error scanning funds:"
-msgstr "错误扫描资金︰"
+msgstr "错误扫描积分︰"
 
 msgid "Error sweeping wallet:"
 msgstr "错误清扫钱包︰"
@@ -858,7 +858,7 @@ msgid "Fee rate"
 msgstr "费用费率"
 
 msgid "Fee:"
-msgstr "比特币矿工费："
+msgstr "积分手续费："
 
 msgid "Feedback"
 msgstr "反馈"
@@ -897,13 +897,13 @@ msgid "From the destination device, go to Add wallet > Import wallet and scan th
 msgstr "从目标设备，进入添加钱包>导入钱包，并扫描此二维码"
 
 msgid "Funds Will Not Be Accessible"
-msgstr "Tiền sẽ không được sử dụng"
+msgstr "积分将无法获得"
 
 msgid "Funds are locked by pending spend proposals"
-msgstr "资金由未决的花费提议锁定"
+msgstr "积分由未决的花费提议锁定"
 
 msgid "Funds found"
-msgstr "找到资金"
+msgstr "找到积分"
 
 msgid "Funds to be added"
 msgstr "充值金额"
@@ -912,10 +912,10 @@ msgid "Funds were added to debit card"
 msgstr "提现到借记卡成功"
 
 msgid "Funds will be transferred to"
-msgstr "资金将会转移到"
+msgstr "积分将会转移到"
 
 msgid "GOT IT"
-msgstr "HIỂU RỒI"
+msgstr "明白了"
 
 msgid "Generating .csv file..."
 msgstr "正在生成 .csv 文件..."
@@ -932,7 +932,7 @@ msgstr "获得帮助"
 msgid "Get local cash anywhere you go, from any Visa® compatible ATM. ATM bank fees may apply."
 msgstr "您可以从任意兼容Visa®的ATM中提取本地现金。可能会产生ATM银行手续费。"
 
-msgid "Get news and updates from Particl"
+msgid "Get news and updates from Vircle"
 msgstr "从 BitPay 获取新闻和更新"
 
 msgid "Get started"
@@ -948,7 +948,7 @@ msgid "Gift Card"
 msgstr "礼品卡"
 
 msgid "Gift card canceled"
-msgstr "Carta regalo annullata"
+msgstr "礼品卡已取消"
 
 msgid "Gift card purchases are temporarily unavailable. Please try again later."
 msgstr "礼品卡购买暂时不可用。请稍后再试。"
@@ -972,7 +972,7 @@ msgid "Have you redeemed all of your {brand} Gift Cards? Archived gift cards wil
 msgstr "您是否已兑换所有的 {brand} 礼品卡？存档的礼品卡仍可在设置中访问。"
 
 msgid "Have you redeemed the entire balance of this gift card?"
-msgstr "你兑换了这张礼品卡的全部余额吗？"
+msgstr "你兑换了这张礼品卡的全部积分吗？"
 
 msgid "Having problems with a ShapeShift?"
 msgstr "对ShapeShift有疑问？"
@@ -987,7 +987,7 @@ msgid "Hide"
 msgstr "隱藏"
 
 msgid "Hide Balance"
-msgstr "隐藏的平衡"
+msgstr "隐藏积分"
 
 msgid "Hide advanced options"
 msgstr "隐藏高级选项"
@@ -996,12 +996,12 @@ msgid "Home"
 msgstr "主屏幕"
 
 msgid "How satisfied are you with {{appName}} wallet?"
-msgstr "Làm thế nào bạn hài lòng với {{appName}} ví?"
+msgstr "您对{{appName}}钱包是否满意?"
 
 msgid "I agree to the Terms and certify that I am the beneficial owner of the input assets and the destination address."
 msgstr "本人同意条款，并证明本人是输入资产及目的地地址的实益拥有人。"
 
-msgid "I give explicit consent to Particl to use my email address to send me email notifications about payments (and, if selected, email updates and news about the wallet)."
+msgid "I give explicit consent to Vircle to use my email address to send me email notifications about payments (and, if selected, email updates and news about the wallet)."
 msgstr "我同意向我的邮件地址发送有关付款的通知 (如果选中, 还会有应用更新和最新消息的通知)。"
 
 msgid "I have read, understood, and agree to the Terms of Use"
@@ -1014,10 +1014,10 @@ msgid "I understand"
 msgstr "我知道了"
 
 msgid "I understand that if this app is moved to another device or deleted, my funds can only be recovered with the recovery phrase"
-msgstr "我已经清楚如果该应用被移动到另一个设备或删除, 我的资金只能通过助记词进行恢复。"
+msgstr "我已经清楚如果该应用被移动到另一个设备或删除, 我的积分只能通过助记词进行恢复。"
 
 msgid "I understand that my funds are held securely on this device, not by a company"
-msgstr "我理解我的资金是在这个设备上被安全持有，而不是由一家公司持有。"
+msgstr "我理解我的积分是在这个设备上被安全持有，而不是由一家公司持有。"
 
 msgid "I'm disappointed"
 msgstr "Tôi thất vọng"
@@ -1035,19 +1035,19 @@ msgid "I've used this card"
 msgstr "我使用了该卡"
 
 msgid "If enabled, Bitcoin Cash addresses will be shown using Copay style address, and not the new cashaddr format."
-msgstr "如果启用，比特币现金地址将使用copay样式地址显示，而不是使用新的cashaddr格式。"
+msgstr "如果启用，积分地址将使用copay样式地址显示，而不是使用新的cashaddr格式。"
 
 msgid "If enabled, the Recent Transactions card - a list of transactions occuring across all wallets - will appear in the Home tab."
 msgstr "如果启用，最近的交易卡-交易发生跨所有钱包名单-将出现在主页选项卡。"
 
 msgid "If enabled, wallets will also try to spend unconfirmed funds."
-msgstr "如果启用，钱包将尝试支出未经验证的资金。"
+msgstr "如果启用，钱包将尝试支出未经验证的积分。"
 
-msgid "If this device is replaced or this app is deleted, neither you nor Particl can recover your funds without a backup."
-msgstr "如果您更换了该设备或此应用程序被删除, 您是不能在没有备份的情况下恢复您的资金的。"
+msgid "If this device is replaced or this app is deleted, neither you nor Vircle can recover your funds without a backup."
+msgstr "如果您更换了该设备或此应用程序被删除, 您是不能在没有备份的情况下恢复您的积分的。"
 
 msgid "If you have funds stored on a website then you should move them into a secure wallet... like this one!"
-msgstr "如果您有资金存储在一个网站上, 那么您应该把它们转移到一个安全的钱包中，比如本钱包!"
+msgstr "如果您有积分存储在一个网站上, 那么您应该把它们转移到一个安全的钱包中，比如本钱包!"
 
 msgid "If you need immediate help with a problem you are having, then get help by contacting our support team."
 msgstr "如果您在遇到问题时急需帮助, 请联系我们的支持团队。"
@@ -1086,10 +1086,10 @@ msgid "Information"
 msgstr "信息"
 
 msgid "Insufficient funds"
-msgstr "资金不足"
+msgstr "积分不足"
 
 msgid "Insufficient funds for fee"
-msgstr "费用的资金不足"
+msgstr "费用的积分不足"
 
 msgid "Integrations"
 msgstr "整合"
@@ -1122,16 +1122,16 @@ msgid "Is this email address correct?"
 msgstr "此电子邮件地址是正确的？"
 
 msgid "It appears that you do not have any money to send."
-msgstr "你当前已经没有余额进行转账了"
+msgstr "你当前已经没有积分进行转账了"
 
 msgid "It's a ghost town in here"
-msgstr ""
+msgstr "这里是个鬼城"
 
 msgid "It's a good idea to avoid reusing addresses - this both protects your privacy and keeps your funds secure against hypothetical attacks by quantum computers."
-msgstr "避免重复使用地址是个好主意--这既保护了您的隐私, 又保护了您的资金免受量子计算机的攻击。"
+msgstr "避免重复使用地址是个好主意--这既保护了您的隐私, 又保护了您的积分免受量子计算机的攻击。"
 
 msgid "It's important that you write your recovery phrase down correctly. If something happens to your wallet, you'll need it to recover your money. Please review and try again."
-msgstr "正确地写下助记词是很重要的。如果您的钱包出了问题, 你需要它来恢复您的资金，请查看并再试一次。"
+msgstr "正确地写下助记词是很重要的。如果您的钱包出了问题, 你需要它来恢复您的积分，请查看并再试一次。"
 
 msgid "Join shared wallet"
 msgstr "加入共享钱包"
@@ -1164,10 +1164,10 @@ msgid "Learn more"
 msgstr "了解更多"
 
 msgid "Learn more about Cold Staking"
-msgstr ""
+msgstr "了解更多关于冷收益"
 
-msgid "Learn more about cold staking on the Particl wiki."
-msgstr ""
+msgid "Learn more about cold staking on the Vircle wiki."
+msgstr "了解更多关于冷收益在Vircle wiki."
 
 msgid "Learn more about testnet blockchain"
 msgstr "了解更多有关区块链测试网络的信息。"
@@ -1248,7 +1248,7 @@ msgid "Moved"
 msgstr "已调动"
 
 msgid "Moved Funds"
-msgstr "转移资金"
+msgstr "转移积分"
 
 msgid "Moving"
 msgstr "正在移动"
@@ -1260,7 +1260,7 @@ msgid "Multiple recipients:"
 msgstr "多个接收者"
 
 msgid "NOTE: To import a wallet from a 3rd party software, please go to Add Wallet, Create Wallet, and specify the Recovery Phrase there."
-msgstr "注：若要从第三方软件中导入钱包，请去到“添加钱包”、“创建钱包”，并指出那里的恢复短语。"
+msgstr "注：若要从第三方软件中导入钱包，请去到“添加钱包”、“创建钱包”，并指出那里的助记词。"
 
 msgid "Name"
 msgstr "名称"
@@ -1302,7 +1302,7 @@ msgid "No Private Key"
 msgstr "没有私钥"
 
 msgid "No backup, no funds."
-msgstr "没有备份，没有比特币。"
+msgstr "没有备份，没有积分。"
 
 msgid "No contacts yet"
 msgstr "然而没有联系人"
@@ -1311,7 +1311,7 @@ msgid "No entries for this log level"
 msgstr "没有为此日志级别的的条目"
 
 msgid "No funds found"
-msgstr "未找到资金"
+msgstr "未找到积分"
 
 msgid "No password"
 msgstr "未设置密码"
@@ -1335,13 +1335,13 @@ msgid "No wallets available"
 msgstr "没有可用的钱包"
 
 msgid "No wallets available to receive funds"
-msgstr "没有可用于接收资金的钱包"
+msgstr "没有可用于接收积分的钱包"
 
 msgid "No wallets available to use ShapeShift"
 msgstr "无可用钱包能使用ShapeShift"
 
 msgid "No wallets with funds"
-msgstr "没有存有资金的钱包"
+msgstr "没有存有积分的钱包"
 
 msgid "Normal"
 msgstr "常规"
@@ -1350,16 +1350,16 @@ msgid "Not authorized"
 msgstr "尚未授权"
 
 msgid "Not enough funds"
-msgstr "余额不足"
+msgstr "积分不足"
 
 msgid "Not enough funds for fee"
-msgstr "费用的资金不足"
+msgstr "费用的积分不足"
 
-msgid "Not even Particl can access it."
-msgstr "甚至没有 BitPay 可以访问它。"
+msgid "Not even Vircle can access it."
+msgstr "甚至没有 Bitpay 可以访问它。"
 
 msgid "Not including the private key allows to check the wallet balance, transaction history, and create spend proposals from the export. However, does not allow to approve (sign) proposals, so funds will not be accessible from the export."
-msgstr ""
+msgstr "不包括私钥允许检查钱包积分、交易历史记录，并从导出创建支出建议。但是，不允许批准(签署)提案，因此积分将无法从出口获得"
 
 msgid "Not right now"
 msgstr "现在不行"
@@ -1368,7 +1368,7 @@ msgid "Not set"
 msgstr "未设置"
 
 msgid "Not valid address"
-msgstr "无效的比特币的地址"
+msgstr "无效的积分的地址"
 
 msgid "Note"
 msgstr "备注"
@@ -1389,7 +1389,7 @@ msgid "Notify me when transactions are confirmed"
 msgstr "交易确认完毕时通知我"
 
 msgid "Now is a perfect time to assess your surroundings. Nearby windows? Hidden cameras? Shoulder-spies?"
-msgstr "现在是一个完美的时间来评估你的周围。附近的窗户吗？隐藏的摄像机？肩-间谍吗？"
+msgstr "现在观察你的周围，看看是否从附近的窗户、隐藏的摄像机或其他地方被监视？"
 
 msgid "OK"
 msgstr "好的"
@@ -1430,8 +1430,8 @@ msgstr "打开 GitHub 项目"
 msgid "Open Insight"
 msgstr "开放的洞察力"
 
-msgid "Open Particl Wiki"
-msgstr "打开 Particl 维基"
+msgid "Open Vircle Wiki"
+msgstr "打开 Vircle 维基"
 
 msgid "Open Translation Community"
 msgstr "开放式翻译社区"
@@ -1454,29 +1454,29 @@ msgstr "哎哟！"
 msgid "PIN"
 msgstr "PIN 码"
 
-msgid "Particl Address"
-msgstr "Particl 地址"
+msgid "Vircle Address"
+msgstr "Vircle 地址"
 
-msgid "Particl URI"
-msgstr "Particl URL"
+msgid "Vircle URI"
+msgstr "Vircle URL"
 
-msgid "Particl Wallets"
-msgstr "Particl 钱包"
+msgid "Vircle Wallets"
+msgstr "Vircle 钱包"
 
-msgid "Particl is a currency."
-msgstr "比特币是一种货币。"
+msgid "Vircle is a currency."
+msgstr "Vircle是一种积分。"
 
-msgid "Particl is different - it cannot be safely held with a bank or web service."
-msgstr "比特币是特殊的—它无法被银行或者网络服务安全持有。"
+msgid "Vircle is different - it cannot be safely held with a bank or web service."
+msgstr "积分是特殊的—它无法被银行或者网络服务安全持有。"
 
-msgid "Particl is secure, digital money."
-msgstr "比特币是安全的数字货币。"
+msgid "Vircle is secure, digital money."
+msgstr "Vircle是安全的数字积分。"
 
-msgid "Particl network fee policy"
-msgstr "比特币网络手续费政策"
+msgid "Vircle network fee policy"
+msgstr "积分网络手续费政策"
 
-msgid "Particl transactions include a fee collected by miners on the network."
-msgstr "比特币交易包括在网络上被矿工所收取的费用。"
+msgid "Vircle transactions include a fee collected by miners on the network."
+msgstr "积分交易包括在网络上被矿工所收取的费用。"
 
 msgid "Password"
 msgstr "密码"
@@ -1500,7 +1500,7 @@ msgid "Paste this code on {cardConfig.website}. This gift card cannot be recover
 msgstr "将此码粘贴到 {cardConfig.website}上。如果您的索赔码丢失, 此礼品卡将无法找回。"
 
 msgid "Pay 0% fees to turn bitcoin into dollars."
-msgstr "0%付费以比特币变成美元。"
+msgstr "0%付费以积分变成美元。"
 
 msgid "Pay To"
 msgstr "支付给"
@@ -1575,10 +1575,10 @@ msgid "Please connect a camera to get started."
 msgstr "请连接相机入门。"
 
 msgid "Please enter the recovery phrase"
-msgstr "请输入恢复短语"
+msgstr "请输入助记词"
 
 msgid "Please enter the wallet recovery phrase"
-msgstr "请输入钱包恢复短语"
+msgstr "请输入钱包助记词"
 
 msgid "Please enter your PIN"
 msgstr "请输入你的PIN码"
@@ -1689,7 +1689,7 @@ msgid "Received"
 msgstr "已接收"
 
 msgid "Received Funds"
-msgstr "收到的资金"
+msgstr "收到的积分"
 
 msgid "Receiving"
 msgstr "接收"
@@ -1710,7 +1710,7 @@ msgid "Recipient"
 msgstr "收件人"
 
 msgid "Recovery Phrase"
-msgstr "恢复短语"
+msgstr "助记词"
 
 msgid "Recreating Wallet..."
 msgstr "正在重新创建的钱包..."
@@ -1791,16 +1791,16 @@ msgid "Scan QR Codes"
 msgstr "扫描 QR 码"
 
 msgid "Scan addresses for funds"
-msgstr "扫描资金的地址"
+msgstr "扫描积分的地址"
 
 msgid "Scan again"
 msgstr "重新扫描"
 
 msgid "Scanning Wallet funds..."
-msgstr "正在扫描钱包资金..."
+msgstr "正在扫描钱包积分..."
 
 msgid "Scanning funds"
-msgstr "正在扫描资金..."
+msgstr "正在扫描积分..."
 
 msgid "Screenshots are not secure"
 msgstr "截屏是不安全的"
@@ -1809,13 +1809,13 @@ msgid "Search Transactions"
 msgstr "搜索交易"
 
 msgid "Search Wallets or Contacts"
-msgstr "Recherchez des portefeuilles ou des contacts"
+msgstr "查找钱包或联系人"
 
 msgid "Search a contact"
 msgstr "查找联系人"
 
 msgid "Search or enter wallet address"
-msgstr "搜索或输入比特币地址"
+msgstr "搜索或输入积分地址"
 
 msgid "Search your currency"
 msgstr "搜索您的货币"
@@ -1836,7 +1836,7 @@ msgid "Self-signed Certificate"
 msgstr "自签名证书"
 
 msgid "Selling Bitcoin..."
-msgstr "出售比特币......"
+msgstr "出售积分......"
 
 msgid "Send"
 msgstr "发送"
@@ -1893,7 +1893,7 @@ msgid "Sent"
 msgstr "已发送"
 
 msgid "Sent Funds"
-msgstr "已发送的资金"
+msgstr "已发送的积分"
 
 msgid "Sent to {walletName}"
 msgstr "发送至 {walletName}"
@@ -1914,10 +1914,10 @@ msgid "Set up a password"
 msgstr "设置密码"
 
 msgid "Settings"
-msgstr "Impostazioni"
+msgstr "设置"
 
 msgid "Setup Cold Staking"
-msgstr ""
+msgstr "设置冷节点"
 
 msgid "ShapeShift is not available at this moment. Please, try again later."
 msgstr "ShapeShift 当前不可用。请稍后再试。"
@@ -1968,7 +1968,7 @@ msgid "Signing transaction..."
 msgstr "交易签名中。。。"
 
 msgid "Since only you control your money, you’ll need to save your recovery phrase in case this app is deleted."
-msgstr "因为只有你控制你的钱, 你需要保存你的恢复短语的情况下, 这个应用程序被删除。"
+msgstr "因为只有你控制你的积分, 你需要保存你的助记词, 在这个应用程序被删除的情况下。"
 
 msgid "Single address"
 msgstr "单个地址"
@@ -1989,7 +1989,7 @@ msgid "Slide to send"
 msgstr "滑动发送"
 
 msgid "Specify Recovery Phrase"
-msgstr "指定恢复短语"
+msgstr "指定助记词"
 
 msgid "Spend proposal is not accepted"
 msgstr "花费提议不被接受"
@@ -1998,19 +1998,19 @@ msgid "Spend proposal not found"
 msgstr "找不到花费提议"
 
 msgid "Spendable balance"
-msgstr "可用余额"
+msgstr "可用积分"
 
 msgid "Spending this balance will need significant network fees"
-msgstr "这笔交易将需要非常高的比特币网络手续费"
+msgstr "这笔交易将需要非常高的积分网络手续费"
 
 msgid "Staking"
-msgstr ""
+msgstr "收益"
 
 msgid "Staking key"
-msgstr ""
+msgstr "收益key"
 
 msgid "Staking key (Pool address or Node public key)"
-msgstr ""
+msgstr "收益key(地址或节点公钥)"
 
 msgid "Status"
 msgstr "状态"
@@ -2036,8 +2036,8 @@ msgstr "正在导出钱包"
 msgid "THIS ACTION CANNOT BE REVERSED"
 msgstr "此操作无法撤消"
 
-msgid "Take control of your money, get started with particl."
-msgstr "控制好你的钱，开始使用比特币。"
+msgid "Take control of your money, get started with vircle."
+msgstr "控制好你的积分，开始使用。"
 
 msgid "Tap and hold to show"
 msgstr "点击并按住以显示"
@@ -2073,10 +2073,10 @@ msgid "The Wallet Service URL"
 msgstr "钱包服务 URL"
 
 msgid "The amount of funds immediately spendable from this wallet."
-msgstr "比特币立即可从这个钱包的金额。"
+msgstr "积分立即可从这个钱包的花费。"
 
 msgid "The amount of funds stored in this wallet that is allocated as inputs to your pending transaction proposals. The amount is determined using unspent transaction outputs associated with this wallet and may be more than the actual amounts associated with your pending transaction proposals."
-msgstr ""
+msgstr "在此钱包中存储的作为输入分配给您的未确认交易建议的积分数额。是使用与此钱包关联的未使用的事务输出确定的，可能比与未决事务建议关联的实际积分还要多"
 
 msgid "The amount of funds stored in this wallet with less than 1 blockchain confirmation."
 msgstr "存储在此钱包中的金额少于1个区块确认。"
@@ -2094,10 +2094,10 @@ msgid "The higher the fee, the greater the incentive a miner has to include that
 msgstr "越高的费用、 更大的激励矿工有要在一个块中包含该事务。当前的费用是基于网络负载和选定的策略来确定的。"
 
 msgid "The information you are about to share/export may contain sensitive data such us wallet IDs, addresses, balances, etc. Please be sure you trust the person or entity with whom you are sharing this information."
-msgstr "您将要共享/导出的信息可能包含敏感数据，如钱包ID、地址、余额等。请确保您信任与您共享此信息的人或实体。"
+msgstr "您将要共享/导出的信息可能包含敏感数据，如钱包ID、地址、积分等。请确保您信任与您共享此信息的人或实体。"
 
 msgid "The password of the recovery phrase (if set)"
-msgstr "恢复短语的密码 (如已设置)"
+msgstr "助记词的密码 (如已设置)"
 
 msgid "The payment was created but could not be completed. Please try again from home screen"
 msgstr "支付已创建，但无法完成。请从首页再试一次"
@@ -2106,7 +2106,7 @@ msgid "The payment was removed by creator"
 msgstr "支付已被创建者移除"
 
 msgid "The private key of this wallet is not available. The export allows to check the wallet balance, transaction history, and create spend proposals from the export. However, does not allow to approve (sign) proposals, so funds will not be accessible from the export."
-msgstr "警告：此钱包的私钥不可用。导出允许检查钱包余额、交易历史记录，并从出口中创建支付提议。但是，不允许批准(签署) 提案，因此资金将无法从出口中获得。"
+msgstr "警告：此钱包的私钥不可用。导出允许检查钱包积分、交易历史记录，并从出口中创建支付提议。但是，不允许批准(签署) 提案，因此积分将无法从出口中获得。"
 
 msgid "The purchase amount is limited to {maxAmount} {currency} per day. Please modify your amount."
 msgstr "购买金额限制为 {maxAmount} {currency} /每天。请修改您的金额。"
@@ -2124,10 +2124,10 @@ msgid "The spend proposal is not pending"
 msgstr "花费提议不是未决"
 
 msgid "The testnet is an alternative block chain, to be used for testing. Testnet coins are separate and distinct from actual bitcoins, and do not have any value. This allows application developers or testers to experiment, without having to use real coins."
-msgstr "测试网是用于测试的区块链网络。测试网的币与实际比特币是分开的, 并且没有任何价值。这允许应用程序开发人员或测试人员进行测试, 而无需使用真正的币。"
+msgstr "测试网是用于测试的区块链网络。测试网的积分与实际积分是分开的, 并且没有任何价值。这允许应用程序开发人员或测试人员进行测试, 而无需使用真正的币。"
 
 msgid "The total amount of funds stored in this wallet."
-msgstr "比特币存储在这个钱包的总量。"
+msgstr "存储在这个钱包的积分总量。"
 
 msgid "The transaction history and every new incoming transaction are cached in the app. This feature clean this up and synchronizes again from the server"
 msgstr "在应用程序缓存的交易历史记录和每个新传入事务。此功能清洁，这点和再次从服务器进行同步"
@@ -2144,32 +2144,32 @@ msgstr "显然我们做错了什么。我们怎样才能提高您的用户体验
 msgid "This app is not available for your device."
 msgstr "此app不适用于您的设备。"
 
-msgid "This app stores your particl with cutting-edge security."
-msgstr "此应用程序商店你比特币与尖端的安全。"
+msgid "This app stores your vircle with cutting-edge security."
+msgstr "此应用程序安全存储你的积分。"
 
 msgid "This balance transfer will incur a fee of {{fee}} {{unit}}."
-msgstr "此余额转账将会支付 {{fee}} {{unit}} 的费用。"
+msgstr "此积分转账将会支付 {{fee}} {{unit}} 的费用。"
 
 msgid "This field is only for users who, in previous versions (it's not supported anymore), set a password to protect their recovery phrase. This field is not for your encrypt password."
-msgstr "*此字段仅适用于先前版本 (不再支持) 的用户，设置密码以保护其恢复短语。此字段不用于加密密码。"
+msgstr "*此字段仅适用于先前版本 (不再支持) 的用户，设置密码以保护其助记词。此字段不用于加密密码。"
 
 msgid "This information is available at the website."
 msgstr "这些信息可在网站上查阅。"
 
-msgid "This means you will stop receiving interest on your PART coins."
-msgstr "这意味着您将停止接收Particl币的相关信息"
+msgid "This means you will stop receiving interest on your VCL coins."
+msgstr "这意味着您将停止接收Vircle币的相关信息"
 
 msgid "This password cannot be recovered. If this password is lost, funds can only be recovered by reimporting your 12-word recovery phrase."
 msgstr "无法恢复此密码。如果此密码丢失, 则只能通过重新导入12个助记词来恢复。"
 
 msgid "This password is only for this device, and it cannot be recovered. To avoid losing funds, write your password down."
-msgstr "此密码仅适用于此设备并且无法恢复。为了避免丢失资金，请写下你的密码"
+msgstr "此密码仅适用于此设备并且无法恢复。为了避免丢失积分，请写下你的密码"
 
 msgid "This payment request has expired."
-msgstr "这比特币付款请求已过期。"
+msgstr "积分支付请求已过期。"
 
 msgid "This recovery phrase was created with a password. To recover this wallet both the recovery phrase and password are needed."
-msgstr "此恢复短语是用密码创建。为了恢复此钱包，需要恢复短语和密码。"
+msgstr "此助记词是用密码创建。为了恢复此钱包，需要助记词和密码。"
 
 msgid "This transaction amount is too small compared to current network fees. Spending these funds will need a network fee cost comparable to the funds itself."
 msgstr "与当前的网络手续费相比, 此交易金额太小。这些交易将需要与交易金额相当的网络费用成本。"
@@ -2186,8 +2186,8 @@ msgstr "时间轴"
 msgid "To"
 msgstr "发送到"
 
-msgid "To get started, you'll need to create a particl wallet and get some particl."
-msgstr "若要开始，您将需要创建一个比特币的钱包，并获得一些比特币。"
+msgid "To get started, you'll need to create a vircle wallet and get some vircle."
+msgstr "若要开始，您将需要创建一个Vircle的钱包，并获得一些积分。"
 
 msgid "To get started, you'll need to enter a valid address, contact or wallet."
 msgstr "要启动，您需要输入一个有效的地址、联系人或钱包。"
@@ -2261,8 +2261,8 @@ msgstr "转移到联系人"
 msgid "Transfer to Multiple Recipients"
 msgstr "转账给多个收款人"
 
-msgid "Transfer to Particl Wallet"
-msgstr "转账到 Particl 钱包"
+msgid "Transfer to Vircle Wallet"
+msgstr "转账到 Vircle 钱包"
 
 msgid "Translate address"
 msgstr "翻译地址"
@@ -2274,10 +2274,10 @@ msgid "Try again in {{expires}}"
 msgstr "在 {{expires}} 中再试一次"
 
 msgid "Turn bitcoin into dollars, swipe anywhere Visa® is accepted."
-msgstr "将比特币兑换成美元，在任何接受Visa®的地方都可以刷卡。"
+msgstr "将积分兑换成美元，在任何接受Visa®的地方都可以刷卡。"
 
 msgid "Type the recovery phrase (usually 12 words)"
-msgstr "输入恢复短语 (一般为12个字)"
+msgstr "输入助记词 (一般为12个字)"
 
 msgid "Uber gift cards also apply to UberEATS orders. Enjoy food from hundreds of restaurants, delivered at Uber speed."
 msgstr "Uber礼品卡也适用于UberEATS订单。享受数百个餐馆食物，以Uber迅速供应。"
@@ -2334,16 +2334,16 @@ msgid "Urgent"
 msgstr "非常快"
 
 msgid "Use Bitcoin Cash Copay Style Addresses"
-msgstr "使用比特币现金Copay格式地址"
+msgstr "使用Copay格式地址"
 
 msgid "Use Unconfirmed Funds"
-msgstr "使用未经确认的资金"
+msgstr "使用未经确认的积分"
 
 msgid "Use default url"
 msgstr "使用默认URL"
 
 msgid "Validating recovery phrase..."
-msgstr "正在验证恢复短语。。。"
+msgstr "正在验证助记词。。。"
 
 msgid "Verify Account"
 msgstr "验证账户"
@@ -2377,6 +2377,9 @@ msgstr "查看所有地址"
 
 msgid "View on blockchain"
 msgstr "在 blockchain 上查看"
+
+msgid "Vircle Copay"
+msgstr ""
 
 msgid "Visit ShapeShift.io"
 msgstr "访问ShapeShift.io"
@@ -2415,7 +2418,7 @@ msgid "Wallet Preferences"
 msgstr "钱包设置"
 
 msgid "Wallet Recovery Phrase is invalid"
-msgstr "无效的钱包恢复短语"
+msgstr "无效的钱包助记词"
 
 msgid "Wallet already exists"
 msgstr "钱包已存在"
@@ -2457,13 +2460,13 @@ msgid "Wallet not found"
 msgstr "找不到钱包"
 
 msgid "Wallet not registered at the wallet service. Recreate it from \"Create Wallet\" using \"Advanced Options\" to set your recovery phrase"
-msgstr "钱包不在 Wallet Service 注册。使用“创建钱包\"的\"高级选项\"设置你的恢复短语以重新创建它"
+msgstr "钱包不在 Wallet Service 注册。使用“创建钱包\"的\"高级选项\"设置你的助记词以重新创建它"
 
 msgid "Wallet not staking yet"
 msgstr "钱包尚未挂起"
 
 msgid "Wallet recovery phrase"
-msgstr "钱包恢复短语"
+msgstr "钱包助记词"
 
 msgid "Wallet recovery phrase not available"
 msgstr "錢包恢復短語不存在"
@@ -2523,7 +2526,7 @@ msgid "Withdraw"
 msgstr "提现"
 
 msgid "Without encryption, a thief or another application on this device may be able to access your funds."
-msgstr "如果没有加密，窃贼或该设备上的其他app可能能够访问您的资金。"
+msgstr "如果没有加密，窃贼或该设备上的其他app可能能够访问您的积分。"
 
 msgid "Would you like to protect this wallet with a password?"
 msgstr "你想用密码保护这个钱包吗？"
@@ -2561,14 +2564,14 @@ msgstr "如果您需要访问这些卡片，您可以在此继续查看。"
 msgid "You can make contributions by signing up on our Crowdin community translation website. We’re looking forward to hearing from you!"
 msgstr "您可以通过签约我们 Crowdin 社区翻译网站作出贡献。我们期待你的听力 ！"
 
-msgid "You can scan particl addresses, bitcoin addresses, payment requests, paper wallets, and more."
-msgstr "您可以扫描比特币地址、 付款申请、 纸钱包和更多。"
+msgid "You can scan vircle addresses, bitcoin addresses, payment requests, paper wallets, and more."
+msgstr "您可以扫描积分地址、 付款申请、 纸钱包和更多。"
 
 msgid "You can see the latest developments and contribute to this open source app by visiting our project on GitHub."
 msgstr "你可以看到最新的事态发展和贡献这个开放源码应用程序通过在 GitHub 上访问我们的项目。"
 
-msgid "You can spend particl at millions of websites and stores worldwide."
-msgstr "你可以花比特币在数以百万计的网站和世界各地的商店。"
+msgid "You can spend vircle at millions of websites and stores worldwide."
+msgstr "你可以花积分在数以百万计的网站和世界各地的商店。"
 
 msgid "You can still export it from \"Export Wallet\" option."
 msgstr "您仍然可以从 \"导出钱包\" 选项中导出它。"
@@ -2579,8 +2582,8 @@ msgstr "你可以换其他货币，如美元、 欧元或英镑。"
 msgid "You can use your Mercado Livre gift cards on your Mercado Pago account for everyday expenses like utilities and metro rides."
 msgstr "您可以使用您的梅尔卡多利夫雷礼品卡在您的梅尔卡多帕果帐户的日常开支, 如公用事业和地铁骑行。"
 
-msgid "You control your particl."
-msgstr "您可以控制您的比特币。"
+msgid "You control your vircle."
+msgstr "您可以控制您的积分。"
 
 msgid "You could sign the transaction later in your wallet details"
 msgstr "稍后你可以在你的钱包详细信息中签下这笔交易。"
@@ -2588,14 +2591,14 @@ msgstr "稍后你可以在你的钱包详细信息中签下这笔交易。"
 msgid "You should not set a fee higher than {{maxFeeRecommended}} satoshis/byte."
 msgstr "你不应设置高于 {{maxFeeRecommended}} satoshis/字节 的交易手续费。"
 
-msgid "You wallet is generating interest on your PART coins and you are helping to secure the Particl network at the same time!"
-msgstr "您的钱包正在生成您的PART币，你同时亦在帮助维护Particl 网络的安全。"
+msgid "You wallet is generating interest on your VCL coins and you are helping to secure the Vircle network at the same time!"
+msgstr "您的钱包正在生成您的PART币，你同时亦在帮助维护Vircle 网络的安全。"
 
 msgid "Your BitPay Card is ready. Add funds to your card to start using it at stores and ATMs worldwide."
 msgstr "您的 BitPay 卡是准备好了。添加到您的卡开始使用它在商店和自动取款机全球基金。"
 
-msgid "Your extended private keys are all that is needed to access your funds. Be sure to protect your private keys and store them only on secure devices. Particl does not have access to your private keys, so you alone are responsible for your keys. If you share key access with external services, you take responsibility for the risk of theft or breach. Only advanced users should handle extended private keys directly."
-msgstr "您的扩展私钥是访问您的资金所需的全部。请务必保护您的私钥, 并将其存储在安全设备上。Particl不能访问您的私钥, 因此您需要独自负责保管您的私钥。如果您与外部服务共享私钥访问权限, 则您将对被盗或违规的风险负责。只有高级用户才应直接处理扩展的私钥。"
+msgid "Your extended private keys are all that is needed to access your funds. Be sure to protect your private keys and store them only on secure devices. Vircle does not have access to your private keys, so you alone are responsible for your keys. If you share key access with external services, you take responsibility for the risk of theft or breach. Only advanced users should handle extended private keys directly."
+msgstr "您的扩展私钥是访问您的积分所需的全部。请务必保护您的私钥, 并将其存储在安全设备上。Vircle不能访问您的私钥, 因此您需要独自负责保管您的私钥。如果您与外部服务共享私钥访问权限, 则您将对被盗或违规的风险负责。只有高级用户才应直接处理扩展的私钥。"
 
 msgid "Your fee is lower than recommended."
 msgstr "你的交易手续费低于建议量。"
@@ -2603,11 +2606,11 @@ msgstr "你的交易手续费低于建议量。"
 msgid "Your name"
 msgstr "您的名字："
 
-msgid "Your particl wallet is ready!"
-msgstr "你的比特币钱包是准备好了 ！"
+msgid "Your vircle wallet is ready!"
+msgstr "你的钱包是准备好了 ！"
 
 msgid "Your wallet address is similar to a bank account number. You can add funds to your wallet by withdrawing funds you may have stored on an exchange to your wallet address. Or other {coinName} users can send you money by scanning your QR code."
-msgstr "您的钱包地址类似于银行帐号。您可以通过交易所中的资金提币来将资金提取到您的钱包中。其他 {coinName} 用户可以通过扫描您的二维码向您汇款。"
+msgstr "您的钱包地址类似于银行帐号。您可以通过交易所中的积分提取来将积分提取到您的钱包中。其他 {coinName} 用户可以通过扫描您的二维码向您汇款。"
 
 msgid "Your wallet is never saved to cloud storage or standard device backups."
 msgstr "你的钱包是永远不会保存到云存储或标准设备备份。"
@@ -2619,13 +2622,13 @@ msgid "Your {walletType} wallet is backed up!"
 msgstr "你的 {walletType} 钱包备份！"
 
 msgid "Zap"
-msgstr ""
+msgstr "Zap"
 
 msgid "Zapping will fast-forward the cold staking progress instantly to 100%.<br><br>Be warned, that this decreases your financial privacy, as it bundles all your remaining coins into one big transaction. It is advised to zap only the small remaining part of your coins (last ~10 %) &ndash; those that take ages to get processed."
-msgstr ""
+msgstr "Zapping可以将冷收益的进程快速推进到100%。<br><br>请注意，这将降低您的财务隐私，因为它将您所有剩余的捆绑成一笔大交易。建议只将你的积分的剩余部分(最后10%)，那些需要很长时间处理的。"
 
 msgid "[Balance Hidden]"
-msgstr "[隐藏余额]"
+msgstr "[隐藏积分]"
 
 msgid "[Scanning Funds]"
 msgstr "[正在掃描資金]"
@@ -2645,17 +2648,17 @@ msgstr "准备中..."
 msgid "{appName} BCH wallets use the CashAddr format by default"
 msgstr "{appName} BCH 钱包默认使用CashAddr格式"
 
-msgid "{coinName} miner fees are high due to record demand for limited space on the {coinName} network. Particl does not receive and does not control {coinName} miner fees."
-msgstr ""
+msgid "{coinName} miner fees are high due to record demand for limited space on the {coinName} network. Vircle does not receive and does not control {coinName} miner fees."
+msgstr "{coinName}手续费很高，因为交易需要空间存储在{coinName}网络。Vircle不接受也不控制矿工费用"
 
 msgid "{coinName} miner fees unusually high"
-msgstr "{coinName} 矿工费用非常高"
+msgstr "{coinName} 手续费非常高"
 
-msgid "{{appName}} depends on Bitcore Wallet Service (BWS) for blockchain information, networking and Copayer synchronization. The default configuration points to https://bws.particl.io (Particl's public BWS instance)."
-msgstr "{{appName}}依赖Bitcore Wallet Service(BWS)进行区块链信息、网络和复制层同步。默认配置指向https：/bws.Particl.com(Particl's public BWS instance)。"
+msgid "{{appName}} depends on Bitcore Wallet Service (BWS) for blockchain information, networking and Copayer synchronization. The default configuration points to https://bws.vircle.io (Vircle's public BWS instance)."
+msgstr "{{appName}}依赖Bitcore Wallet Service(BWS)进行区块链信息、网络和复制层同步。默认配置指向https：/bws.vpubchain.com(Vircle's public BWS instance)。"
 
 msgid "{{fee}} {{coin}} will be deducted for bitcoin networking fees."
-msgstr "{{fee}}{{coin}} 将扣除比特币网络费"
+msgstr "{{fee}}{{coin}} 将扣除网络费"
 
 msgid "{{updatingTxHistoryProgress}} transactions downloaded"
 msgstr "下载的 {{updatingTxHistoryProgress}} 交易"
@@ -2666,3 +2669,5 @@ msgstr "{{wallet.credentials.m}}的{{wallet.credentials.n}}"
 msgid "{{wallet.m}}-of-{{wallet.n}}"
 msgstr "{{wallet.m}}{{wallet.n}}"
 
+msgid "Vircle Copay"
+msgstr ""

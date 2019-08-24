@@ -207,6 +207,12 @@ export class TxDetailsPage {
         this.initActionList();
         this.contact();
 
+        // johntonny
+        let pos =this.btx.feeStr.indexOf("PART");
+        if(pos>=0){
+          this.btx.feeStr = this.btx.feeStr.substring(0,pos)+'VCL';
+        }
+
         this.walletProvider
           .getLowAmount(this.wallet)
           .then((amount: number) => {
@@ -249,7 +255,7 @@ export class TxDetailsPage {
 
   public viewOnBlockchain(): void {
     let btx = this.btx;
-    let url = 'https://' + this.blockexplorerUrl + '/tx/' + btx.txid;
+    let url = 'http://' + this.blockexplorerUrl + '/tx/' + btx.txid;
     let optIn = true;
     let title = null;
     let message = this.translate.instant('View Transaction on Insight');

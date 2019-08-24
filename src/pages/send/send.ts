@@ -102,7 +102,8 @@ export class SendPage extends WalletTabsChild {
         coinName = 'bitcoin cash';
         break;
       case Coin.PART:
-        coinName = 'particl';
+        coinName = 'vircle';
+        // coinName = 'particl';
         break;
     }
     const infoSheet = this.actionSheetProvider.createInfoSheet(

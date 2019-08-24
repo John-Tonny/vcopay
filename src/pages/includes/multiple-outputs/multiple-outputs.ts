@@ -40,6 +40,12 @@ export class MultipleOutputsPage {
         this._tx.network,
         outputAddr
       );
+
+      // johntonny
+      let pos =output.amountStr.indexOf("PART");
+      if(pos>=0){
+        output.amountStr = output.amountStr.substring(0,pos)+'VCL';
+      }
     });
 
     this.contact();

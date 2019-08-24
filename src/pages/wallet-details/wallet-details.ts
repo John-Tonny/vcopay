@@ -297,6 +297,13 @@ export class WalletDetailsPage extends WalletTabsChild {
         this.analyzeUtxos();
         this.updateStatusError = null;
         this.walletNotRegistered = false;
+
+        // johntonny
+        let pos = this.wallet.status.totalBalanceStr.indexOf('PART');
+        if(pos>=0){
+          this.wallet.status.totalBalanceStr = this.wallet.status.totalBalanceStr.substring(0,pos) + 'VCL';
+        }
+
       })
       .catch(err => {
         this.updatingStatus = false;

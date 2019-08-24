@@ -41,7 +41,7 @@ export class BwcProvider {
 
     // note opts use `bwsurl` all lowercase;
     let bwc = new BWC({
-      baseUrl: opts.bwsurl || 'https://bws.particl.io/bws/api',
+      baseUrl: opts.bwsurl || 'https://bwsby.vpubchain.com/bws/api',
       verbose: opts.verbose,
       timeout: 100000,
       transports: ['polling']

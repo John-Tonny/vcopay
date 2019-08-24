@@ -165,7 +165,7 @@ export class ConfigProvider {
 
       // Bitcore wallet service URL
       bws: {
-        url: 'https://bws.particl.io/bws/api'
+        url: 'https://bwsby.vpubchain.com/bws/api'
       },
 
       download: {
@@ -252,7 +252,7 @@ export class ConfigProvider {
           test: 'test-bch-insight.bitpay.com/#'
         },
         part: {
-          live: 'explorer.particl.io',
+          live: '52.82.13.116:3001',
           test: 'explorer-testnet.particl.io'
         }
       }

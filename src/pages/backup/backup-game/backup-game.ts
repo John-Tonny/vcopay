@@ -274,7 +274,8 @@ export class BackupGamePage {
             walletType = 'bitcoin cash';
             break;
           case 'part':
-            walletType = 'particl';
+            walletType = 'vircle';
+            // walletType = 'particl';
             break;
           default:
             walletType = 'bitcoin';

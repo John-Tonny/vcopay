@@ -62,6 +62,7 @@ export class BackupProvider {
         iter: 10000
       });
       return e;
+
     } catch (err) {
       this.logger.error('Error exporting wallet: ', err);
       return null;

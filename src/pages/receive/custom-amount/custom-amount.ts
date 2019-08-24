@@ -55,6 +55,14 @@ export class CustomAmountPage {
         this.navParams.data.currency
       );
 
+      // johntonny
+      if(parsedAmount.amountUnitStr == 'part'){
+        parsedAmount.amountUnitStr = 'vcl';
+      }
+
+      if(parsedAmount.amountUnitStr == 'PART'){
+        parsedAmount.amountUnitStr = 'VCL';
+      }
       // Amount in USD or BTC
       const _amount = parsedAmount.amount;
       const _currency = parsedAmount.currency;

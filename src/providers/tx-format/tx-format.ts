@@ -59,6 +59,10 @@ export class TxFormatProvider {
 
   public formatAmountStr(coin: string, satoshis: number): string {
     if (isNaN(satoshis)) return undefined;
+    // johntonny
+    if (coin == 'part'){
+      coin = 'vcl';
+    }
     return this.formatAmount(satoshis) + ' ' + coin.toUpperCase();
   }
 

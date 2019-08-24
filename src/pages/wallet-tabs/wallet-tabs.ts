@@ -33,12 +33,12 @@ import * as _ from 'lodash';
         tabTitle="{{'Send'|translate}}"
         tabIcon="tab-send"
       ></ion-tab>
-      <ion-tab
+      <!--ion-tab
         *ngIf="canColdStake"
         [root]="stakingRoot"
         tabTitle="{{'Staking'|translate}}"
         tabIcon="snow"
-      ></ion-tab>
+      ></ion-tab-->
     </ion-tabs>
   `
 })
