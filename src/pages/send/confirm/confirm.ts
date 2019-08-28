@@ -659,7 +659,7 @@ export class ConfirmPage extends WalletTabsChild {
         this.translate.instant(
           'A total of {{amountBelowFeeStr}} {{coin}} were excluded. These funds come from UTXOs smaller than the network fee provided.'
         ),
-        { amountBelowFeeStr, coin: this.tx.coin.toUpperCase() }
+        { amountBelowFeeStr, coin: this.tx.coin.toUpperCase()=='PART'?'VCL':this.tx.coin.toUpperCase()}
       );
       warningMsg.push(message);
     }
@@ -670,7 +670,7 @@ export class ConfirmPage extends WalletTabsChild {
         this.translate.instant(
           'A total of {{amountAboveMaxSizeStr}} {{coin}} were excluded. The maximum size allowed for a transaction was exceeded.'
         ),
-        { amountAboveMaxSizeStr, coin: this.tx.coin.toUpperCase() }
+        { amountAboveMaxSizeStr, coin: this.tx.coin.toUpperCase()=='PART'?'VCL': this.tx.coin.toUpperCase()}
       );
       warningMsg.push(message);
     }
@@ -873,7 +873,7 @@ export class ConfirmPage extends WalletTabsChild {
         if (amountUsd <= this.CONFIRM_LIMIT_USD) return resolve(false);
 
         const amount = (this.tx.amount / 1e8).toFixed(8);
-        const unit = txp.coin.toUpperCase();
+        const unit = txp.coin.toUpperCase()=='PART'?'VCL':txp.coin.toUpperCase();
         const name = wallet.name;
         const message = this.replaceParametersProvider.replace(
           this.translate.instant(

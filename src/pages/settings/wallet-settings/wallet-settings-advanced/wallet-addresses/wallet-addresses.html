@@ -47,7 +47,7 @@
       <ion-item-divider>{{'Addresses with balance' | translate}}</ion-item-divider>
       <ion-item *ngFor="let w of latestWithBalance" copy-to-clipboard="{{w.address}}">
         <h3>{{w.address}}</h3>
-        <p class="info">{{w.amount | satToUnit: wallet.coin}}</p>
+        <p class="info">{{w.amount | satToUnit: wallet.coin=='part'?'VCL':wallet.coin}}</p>
       </ion-item>
     </div>
 

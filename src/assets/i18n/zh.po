@@ -120,7 +120,7 @@ msgid "Addresses with balance"
 msgstr "有积分的地址"
 
 msgid "Advanced"
-msgstr "進階"
+msgstr "高级选项"
 
 msgid "All"
 msgstr "全部"
@@ -138,7 +138,7 @@ msgid "Almost done! Let's review."
 msgstr "差不多完成了 ！让我们回顾一下。"
 
 msgid "Alternative currency"
-msgstr "可选货币"
+msgstr "可选积分"
 
 msgid "Amazon.co.jp Gift Cards never expire and can be redeemed towards millions of items at www.amazon.co.jp."
 msgstr "Amazon.co.jp 礼品卡永不过期, 可在 www.amazon.co.jp 兑换数百万件。"
@@ -156,10 +156,10 @@ msgid "Amount below minimum allowed"
 msgstr "数额低于最低允许值"
 
 msgid "Amount too big"
-msgstr "量太大"
+msgstr "数额太大"
 
 msgid "Amount:"
-msgstr "量："
+msgstr "数额："
 
 msgid "Anyone with your recovery phrase can access or spend your funds."
 msgstr "任何有你的助记词的人都可以查看或花费你的积分。"
@@ -246,7 +246,7 @@ msgid "Before retrieving your wallet address, it's recommended that you first wr
 msgstr "在找回你的钱包地址之前，建议你先把你的助记词写下来并妥善保管，这样你的钱包就可以在你的设备丢失或被盗的情况下被找回来."
 
 msgid "Below Minimum Amount"
-msgstr "低于最小数量"
+msgstr "低于最小数额"
 
 msgid "BitPay Card URI"
 msgstr "BitPay Card URI"
@@ -741,7 +741,7 @@ msgid "Enter a transaction memo"
 msgstr "输入交易备忘录"
 
 msgid "Enter custom fee in sat/byte"
-msgstr "在sat/byte输入自定义费用"
+msgstr "输入自定义费用(sat/byte)"
 
 msgid "Enter email address"
 msgstr "输入邮箱地址"
@@ -1305,7 +1305,7 @@ msgid "No backup, no funds."
 msgstr "没有备份，没有积分。"
 
 msgid "No contacts yet"
-msgstr "然而没有联系人"
+msgstr "没有联系人"
 
 msgid "No entries for this log level"
 msgstr "没有为此日志级别的的条目"
@@ -1356,7 +1356,7 @@ msgid "Not enough funds for fee"
 msgstr "费用的积分不足"
 
 msgid "Not even Vircle can access it."
-msgstr "甚至没有 Bitpay 可以访问它。"
+msgstr "甚至没有 Vircle 可以访问它。"
 
 msgid "Not including the private key allows to check the wallet balance, transaction history, and create spend proposals from the export. However, does not allow to approve (sign) proposals, so funds will not be accessible from the export."
 msgstr "不包括私钥允许检查钱包积分、交易历史记录，并从导出创建支出建议。但是，不允许批准(签署)提案，因此积分将无法从出口获得"
@@ -2108,11 +2108,11 @@ msgstr "支付已被创建者移除"
 msgid "The private key of this wallet is not available. The export allows to check the wallet balance, transaction history, and create spend proposals from the export. However, does not allow to approve (sign) proposals, so funds will not be accessible from the export."
 msgstr "警告：此钱包的私钥不可用。导出允许检查钱包积分、交易历史记录，并从出口中创建支付提议。但是，不允许批准(签署) 提案，因此积分将无法从出口中获得。"
 
-msgid "The purchase amount is limited to {maxAmount} {currency} per day. Please modify your amount."
-msgstr "购买金额限制为 {maxAmount} {currency} /每天。请修改您的金额。"
+msgid "The purchase amount is limited to {maxAmount} VCL per day. Please modify your amount."
+msgstr "购买金额限制为 {maxAmount} VCL /每天。请修改您的金额。"
 
-msgid "The purchase amount must be at least {minAmount} {currency}. Please modify your amount."
-msgstr "购买金额必须至少为 {minAmount} {currency}。请修改您的金额。"
+msgid "The purchase amount must be at least {minAmount} VCL. Please modify your amount."
+msgstr "购买金额必须至少为 {minAmount} VCL。请修改您的金额。"
 
 msgid "The request could not be understood by the server"
 msgstr "服务器不理解此请求"
@@ -2654,7 +2654,7 @@ msgstr "{coinName}手续费很高，因为交易需要空间存储在{coinName}�
 msgid "{coinName} miner fees unusually high"
 msgstr "{coinName} 手续费非常高"
 
-msgid "{{appName}} depends on Bitcore Wallet Service (BWS) for blockchain information, networking and Copayer synchronization. The default configuration points to https://bws.vircle.io (Vircle's public BWS instance)."
+msgid "{{appName}} depends on Bitcore Wallet Service (BWS) for blockchain information, networking and Copayer synchronization. The default configuration points to https://bwsby.vpubchain.com (Vircle's public BWS instance)."
 msgstr "{{appName}}依赖Bitcore Wallet Service(BWS)进行区块链信息、网络和复制层同步。默认配置指向https：/bws.vpubchain.com(Vircle's public BWS instance)。"
 
 msgid "{{fee}} {{coin}} will be deducted for bitcoin networking fees."
