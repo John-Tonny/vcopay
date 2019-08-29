@@ -1,6 +1,6 @@
 {
   "name": "*USERVISIBLENAME*",
-  "app_id": "io.particl.*BUNDLENAME*",
+  "app_id": "io.vircle.*BUNDLENAME*",
   "type": "ionic-angular",
   "integrations": {
     "cordova": {}

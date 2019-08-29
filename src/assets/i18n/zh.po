@@ -1221,13 +1221,13 @@ msgid "Merchant fee too high. Payment rejected"
 msgstr "商户费过高。支付已拒绝。"
 
 msgid "Miner Fee"
-msgstr "矿工费用"
+msgstr "交易手续费"
 
 msgid "Miner Fee Notice"
-msgstr "矿工费用通知"
+msgstr "交易手续费通知"
 
 msgid "Miner fee"
-msgstr "矿工费"
+msgstr "交易手续费"
 
 msgid "Minimum amount required is {{min}}"
 msgstr "所需最小金额是{{min}}"
@@ -2649,7 +2649,7 @@ msgid "{appName} BCH wallets use the CashAddr format by default"
 msgstr "{appName} BCH 钱包默认使用CashAddr格式"
 
 msgid "{coinName} miner fees are high due to record demand for limited space on the {coinName} network. Vircle does not receive and does not control {coinName} miner fees."
-msgstr "{coinName}手续费很高，因为交易需要空间存储在{coinName}网络。Vircle不接受也不控制矿工费用"
+msgstr "{coinName}手续费很高，因为交易需要空间存储在{coinName}网络。Vircle不接受也不控制交易手续费"
 
 msgid "{coinName} miner fees unusually high"
 msgstr "{coinName} 手续费非常高"
