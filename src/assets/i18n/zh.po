@@ -36,7 +36,7 @@ msgid "A total of {{amountAboveMaxSizeStr}} {{coin}} were excluded. The maximum 
 msgstr "总数为{{amountAboveMaxSizeStr}}{{coin}} 的交易已被拒绝。超过了交易允许的最大额度。"
 
 msgid "A total of {{amountBelowFeeStr}} {{coin}} were excluded. These funds come from UTXOs smaller than the network fee provided."
-msgstr "总数为{{amountBelowFeeStr}}{{coin}} 已被拒绝。UTXOs积分少于提供的网络手续费。"
+msgstr "总数为{{amountBelowFeeStr}}{{coin}} 已被拒绝。UTXOs积分少于提供的交易手续费。"
 
 msgid "A total of {{amountStr}} ({{fiatAmount | number:'1.2-2'}} {{currencyIsoCode}}) will be exchanged for {{withdrawalStr}} ({{fiatWithdrawal | number:'1.2-2'}} {{currencyIsoCode}})."
 msgstr "Tổng cộng {{amountStr}} ({{fiatAmount | number:'1.2-2'}} {{currencyIsoCode}}) sẽ được đổi thành {{withdrawalStr}} ({{fiatWithdrawal | number:'1.2-2'}} {{currencyIsoCode}})."
@@ -45,7 +45,7 @@ msgid "A total of {{fee}} {{coin}} were excluded. The maximum size allowed for a
 msgstr "总数为 {{fee}} {{coin}} 的交易已被拒绝。超过了交易允许的最大额度。"
 
 msgid "A total of {{fee}} {{coin}} were excluded. These funds come from UTXOs smaller than the network fee provided."
-msgstr "总数为 {{fee}} {{coin}} 的交易已被拒绝。UTXOs积分少于提供的网络手续费。"
+msgstr "总数为 {{fee}} {{coin}} 的交易已被拒绝。UTXOs积分少于提供的交易手续费。"
 
 msgid "About"
 msgstr "关于"
@@ -168,7 +168,7 @@ msgid "Apply changes"
 msgstr "应用更改"
 
 msgid "Approximate network fee to transfer wallet's balance (with normal priority)"
-msgstr "该笔交易的大约网络手续费 (正常优先级)"
+msgstr "该笔交易的大约交易手续费 (正常优先级)"
 
 msgid "Archive All {brand} Gift Cards?"
 msgstr "存档所有的 {brand} 礼品卡？"
@@ -240,7 +240,7 @@ msgid "Be sure to store your recovery phrase in a secure place. If this app is d
 msgstr "一定要把你的助记词放在一个安全的地方。如果这个应用程序被删除，没有它,你的积分将丢失."
 
 msgid "Because you are sending the maximum amount contained in this wallet, the {coinName} miner fee ({fee} {coin}) will be deducted from the total. {msg}"
-msgstr "由于您将发送此钱包中包含的最大金额，网络手续费{fee} {coin}将从总金额中扣除. {msg}"
+msgstr "由于您将发送此钱包中包含的最大金额，交易手续费{fee} {coin}将从总金额中扣除. {msg}"
 
 msgid "Before retrieving your wallet address, it's recommended that you first write down your recovery phrase and store it securely so that your wallet can be recovered in the case your device was lost or stolen."
 msgstr "在找回你的钱包地址之前，建议你先把你的助记词写下来并妥善保管，这样你的钱包就可以在你的设备丢失或被盗的情况下被找回来."
@@ -858,7 +858,7 @@ msgid "Fee rate"
 msgstr "费用费率"
 
 msgid "Fee:"
-msgstr "积分手续费："
+msgstr "交易手续费："
 
 msgid "Feedback"
 msgstr "反馈"
@@ -1818,7 +1818,7 @@ msgid "Search or enter wallet address"
 msgstr "搜索或输入积分地址"
 
 msgid "Search your currency"
-msgstr "搜索您的货币"
+msgstr "搜索您的积分"
 
 msgid "Security"
 msgstr "安全"
@@ -2199,7 +2199,7 @@ msgid "Top up in progress..."
 msgstr "在进展充值..."
 
 msgid "Top-up with this cryptocurrency is not enabled"
-msgstr "未启用该加密货币的充值"
+msgstr "未启用该加密积分的充值"
 
 msgid "Total"
 msgstr "总计"
@@ -2592,7 +2592,7 @@ msgid "You should not set a fee higher than {{maxFeeRecommended}} satoshis/byte.
 msgstr "你不应设置高于 {{maxFeeRecommended}} satoshis/字节 的交易手续费。"
 
 msgid "You wallet is generating interest on your VCL coins and you are helping to secure the Vircle network at the same time!"
-msgstr "您的钱包正在生成您的PART币，你同时亦在帮助维护Vircle 网络的安全。"
+msgstr "您的钱包正在生成您的VCL币，你同时亦在帮助维护Vircle 网络的安全。"
 
 msgid "Your BitPay Card is ready. Add funds to your card to start using it at stores and ATMs worldwide."
 msgstr "您的 BitPay 卡是准备好了。添加到您的卡开始使用它在商店和自动取款机全球基金。"
@@ -2607,7 +2607,7 @@ msgid "Your name"
 msgstr "您的名字："
 
 msgid "Your vircle wallet is ready!"
-msgstr "你的钱包是准备好了 ！"
+msgstr "你的钱包已准备好了 ！"
 
 msgid "Your wallet address is similar to a bank account number. You can add funds to your wallet by withdrawing funds you may have stored on an exchange to your wallet address. Or other {coinName} users can send you money by scanning your QR code."
 msgstr "您的钱包地址类似于银行帐号。您可以通过交易所中的积分提取来将积分提取到您的钱包中。其他 {coinName} 用户可以通过扫描您的二维码向您汇款。"

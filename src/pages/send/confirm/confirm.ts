@@ -557,7 +557,7 @@ export class ConfirmPage extends WalletTabsChild {
         coinName = 'Bitcoin Cash';
         break;
       case 'part':
-        coinName = 'Particl';
+        coinName = 'Vircle';
         break;
       default:
         coinName = 'Bitcoin';

@@ -247,7 +247,7 @@
               <ion-note item-end text-end>
                 <div class="amount">
                   <span [ngClass]="{'received': tx.action == 'received', 'staked': tx.action == 'staked'}" *ngIf="tx.action != 'invalid'">{{tx.amount |
-                    satToUnit: wallet.coin=='part'?'VCL':wallet.coin}}</span>
+                    satToUnit: wallet.coin.toLowerCase()=='part'?'VCL':wallet.coin}}</span>
                   <span class="double-spend" *ngIf="tx.action == 'invalid'" translate>(possible double spend)</span>
                 </div>
                 <div class="date">

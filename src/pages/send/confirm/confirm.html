@@ -21,7 +21,7 @@
           <div class="amount">
             <div>
               {{amount}}
-              <span class="amount-coin">{{tx.coin=='part'?'vcl':tx.coin | uppercase}}</span>
+              <span class="amount-coin">{{tx.coin.toLowerCase()=='part'?'vcl':tx.coin | uppercase}}</span>
             </div>
             <img class="sending-img" src="assets/img/icon-tx-sent-outline.svg">
           </div>
@@ -40,7 +40,7 @@
         <div>...</div>
       </div>
       <div *ngIf="wallet && tx.txp[wallet.id]">
-        <span class="fee-amount">{{tx.txp[wallet.id].fee | satToUnit: tx.coin=='part'?'VCL':tx.coin}}</span>
+        <span class="fee-amount">{{tx.txp[wallet.id].fee | satToUnit: tx.coin.toLowerCase()=='part'?'VCL':tx.coin}}</span>
         <!--div class="fee-details">
           {{tx.txp[wallet.id].fee | satToFiat: tx.coin=='part'?'VCL':tx.coin}}
           <span *ngIf="tx.txp[wallet.id].feeRatePerStr">
@@ -140,7 +140,7 @@
           </div>
           <ion-note item-right text-end col-11>
             <h2 class="output-info ellipsis">{{recipient.addressToShow || recipient.toAddress || recipient.address}}</h2>
-            <h3 class="output-info ellipsis">{{recipient.amountToShow}} {{coin=='part'?'vcl':coin | uppercase}}
+            <h3 class="output-info ellipsis">{{recipient.amountToShow}} {{coin.toLowerCase()=='part'?'vcl':coin | uppercase}}
               <span *ngIf="recipient.altAmountStr">({{recipient.altAmountStr}})</span>
             </h3>
           </ion-note>

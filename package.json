@@ -12,7 +12,7 @@
     "bitcore"
   ],
   "main": "electron/main.js",
-  "title": "Particl Copay",
+  "title": "Vircle Copay",
   "user-agent": "%name %ver (%osinfo)",
   "webkit": {
     "page-cache": false,
@@ -102,7 +102,7 @@
   },
   "build": {
     "appId": "io.particl.copay.desktop2",
-    "productName": "Particl Copay",
+    "productName": "Vircle Copay",
     "afterPack": "./electron/afterPack.js",
     "files": [
       "./electron/main.js",
@@ -115,7 +115,7 @@
         "bitcoin",
         "bitcoincash",
         "bchtest",
-        "Particl Copay"
+        "Vircle Copay"
       ]
     },
     "mac": {

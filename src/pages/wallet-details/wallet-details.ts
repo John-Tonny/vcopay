@@ -303,6 +303,10 @@ export class WalletDetailsPage extends WalletTabsChild {
         if(pos>=0){
           this.wallet.status.totalBalanceStr = this.wallet.status.totalBalanceStr.substring(0,pos) + 'VCL';
         }
+        let pos1 = this.wallet.status.totalBalanceStr.indexOf('part');
+        if(pos1>=0){
+          this.wallet.status.totalBalanceStr = this.wallet.status.totalBalanceStr.substring(0,pos1) + 'vcl';
+        }
 
       })
       .catch(err => {

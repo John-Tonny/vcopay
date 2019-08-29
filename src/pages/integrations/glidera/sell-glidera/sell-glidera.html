@@ -12,7 +12,7 @@
         <span>Selling</span>
       </div>
       <div class="amount-label">
-        <div class="amount">{{amountUnitStr=='PART'?'VCL':btx.amountUnitStr}}</div>
+        <div class="amount">{{amountUnitStr.toUpperCase()=='PART'?'VCL':btx.amountUnitStr}}</div>
         <div class="alternative">
           <span *ngIf="!isFiat">{{sellInfo.subtotal}} {{sellInfo.currency}}</span>
           <span *ngIf="isFiat">{{sellInfo.qty}} BTC</span> @ ${{sellInfo.price}} per BTC

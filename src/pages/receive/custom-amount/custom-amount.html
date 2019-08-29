@@ -26,7 +26,7 @@
         </div>
         <div>
           <div class="qr-card-amount">
-            <span>{{amountUnitStr=='PART'?'VCL':btx.amountUnitStr}}</span>
+            <span>{{amountUnitStr.toUpperCase()=='PART'?'VCL':btx.amountUnitStr}}</span>
             <br>
             <small>({{altAmountStr}})</small>
           </div>

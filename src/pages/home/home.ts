@@ -541,6 +541,10 @@ export class HomePage {
         if(pos>=0){
           wallet.status.totalBalanceStr = wallet.status.totalBalanceStr.substring(0,pos) + 'VCL';
         }
+        let pos1 = wallet.status.totalBalanceStr.indexOf('part');
+        if(pos1>=0){
+          wallet.status.totalBalanceStr = wallet.status.totalBalanceStr.substring(0,pos1) + 'vcl';
+        }
 
         // Update recent transactions and txps
         this.updateTxps();
