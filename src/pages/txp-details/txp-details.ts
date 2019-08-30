@@ -416,11 +416,6 @@ export class TxpDetailsPage {
         if(pos>=0){
           this.tx.feeStr = this.tx.feeStr.substring(0,pos)+'VCL';
         }
-        let pos1 =this.tx.feeStr.indexOf("part");
-        if(pos1>=0){
-          this.tx.feeStr = this.tx.feeStr.substring(0,pos1)+'vcl';
-        }
-
       })
       .catch(err => {
         if (

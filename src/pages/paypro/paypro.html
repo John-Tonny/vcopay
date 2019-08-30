@@ -13,8 +13,8 @@
   <ion-list>
     <ion-item class="item head">
       <div class="amount-label">
-        <div class="amount">{{tx.amount | satToUnit: tx.coin.toLowerCase()=='part'?'VCL':tx.coin}}</div>
-        <div class="alternative">{{tx.amount | satToFiat: tx.coin.toLowerCase()=='part'?'VCL':tx.coin}}</div>
+        <div class="amount">{{tx.amount | satToUnit: tx.coin=='part'?'VCL':tx.coin}}</div>
+        <div class="alternative">{{tx.amount | satToFiat: tx.coin=='part'?'VCL':tx.coin}}</div>
       </div>
     </ion-item>
     <ion-item *ngIf="tx.paypro.domain">

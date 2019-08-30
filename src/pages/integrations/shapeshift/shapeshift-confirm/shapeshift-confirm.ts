@@ -429,7 +429,7 @@ export class ShapeshiftConfirmPage {
         this.translate.instant(
           '{{fee}} {{coin}} will be deducted for bitcoin networking fees.'
         ),
-        { fee, coin: this.fromWallet.coin.toUpperCase()=='PART'?'VCL':this.fromWallet.coin.toUpperCase()}
+        { fee, coin: this.fromWallet.coin.toUpperCase() }
       );
       let warningMsg = this.verifyExcludedUtxos();
 
@@ -449,7 +449,7 @@ export class ShapeshiftConfirmPage {
         this.translate.instant(
           'A total of {{fee}} {{coin}} were excluded. These funds come from UTXOs smaller than the network fee provided.'
         ),
-        { fee: amountBelowFeeStr, coin: this.fromWallet.coin.toUpperCase()=='PART'?'VCL':this.fromWallet.coin.toUpperCase()}
+        { fee: amountBelowFeeStr, coin: this.fromWallet.coin.toUpperCase() }
       );
       warningMsg.push(message);
     }
@@ -460,7 +460,7 @@ export class ShapeshiftConfirmPage {
         this.translate.instant(
           'A total of {{fee}} {{coin}} were excluded. The maximum size allowed for a transaction was exceeded.'
         ),
-        { fee: amountAboveMaxSizeStr, coin: this.fromWallet.coin.toUpperCase()=='PART'?'VCL':this.fromWallet.coin.toUpperCase()}
+        { fee: amountAboveMaxSizeStr, coin: this.fromWallet.coin.toUpperCase() }
       );
       warningMsg.push(message);
     }
@@ -606,11 +606,11 @@ export class ShapeshiftConfirmPage {
       return;
     }
     this.hideSlideButton = true;
-    let fromCoin = this.fromWallet.coin.toUpperCase()=='PART'?'VCL':this.fromWallet.coin.toUpperCase();
-    let toCoin = this.toWallet.coin.toUpperCase()=='PART'?'VCL':this.toWallet.coin.toUpperCase();
+    let fromCoin = this.fromWallet.coin.toUpperCase();
+    let toCoin = this.toWallet.coin.toUpperCase();
     let title = this.replaceParametersProvider.replace(
       this.translate.instant('Confirm to shift {{fromCoin}} to {{toCoin}}'),
-      { fromCoin, toCoin}
+      { fromCoin, toCoin }
     );
 
     let okText = this.translate.instant('OK');

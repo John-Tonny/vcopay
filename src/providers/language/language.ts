@@ -10,7 +10,7 @@ import * as moment from 'moment';
 @Injectable()
 export class LanguageProvider {
   private languages = [
-    {
+    /*{
       name: 'English',
       isoCode: 'en'
     },
@@ -55,6 +55,11 @@ export class LanguageProvider {
     {
       name: 'Português',
       isoCode: 'pt'
+    }*/
+    {
+      name: '中文（简体）',
+      isoCode: 'zh',
+      useIdeograms: true
     }
   ];
   private current: string;

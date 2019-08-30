@@ -33,25 +33,25 @@ msgid "5-star ratings help us get the Vircle Wallet into more hands, and more us
 msgstr "五星级的评价有助于我们将VIRCLE钱包让更多用户使用，更多的用户意味着更多的资源可以投入到应用中！"
 
 msgid "A total of {{amountAboveMaxSizeStr}} {{coin}} were excluded. The maximum size allowed for a transaction was exceeded."
-msgstr "总数为{{amountAboveMaxSizeStr}}{{coin}} 的交易已被拒绝。超过了交易允许的最大额度。"
+msgstr "总数为{{amountAboveMaxSizeStr}} VCL 的交易已被拒绝。超过了交易允许的最大额度。"
 
 msgid "A total of {{amountBelowFeeStr}} {{coin}} were excluded. These funds come from UTXOs smaller than the network fee provided."
-msgstr "总数为{{amountBelowFeeStr}}{{coin}} 已被拒绝。UTXOs积分少于提供的交易手续费。"
+msgstr "总数为{{amountBelowFeeStr}} VCL 已被拒绝。UTXOs积分少于提供的网络手续费。"
 
 msgid "A total of {{amountStr}} ({{fiatAmount | number:'1.2-2'}} {{currencyIsoCode}}) will be exchanged for {{withdrawalStr}} ({{fiatWithdrawal | number:'1.2-2'}} {{currencyIsoCode}})."
-msgstr "Tổng cộng {{amountStr}} ({{fiatAmount | number:'1.2-2'}} {{currencyIsoCode}}) sẽ được đổi thành {{withdrawalStr}} ({{fiatWithdrawal | number:'1.2-2'}} {{currencyIsoCode}})."
+msgstr "总共{{fiatAmount | number:'1.2-2'}} {{currencyIsoCode}}将被替换为{{withdrawalStr} ({{fiatwithdraw | number:'1.2-2'}} {{currencyIsoCode}})"
 
 msgid "A total of {{fee}} {{coin}} were excluded. The maximum size allowed for a transaction was exceeded."
-msgstr "总数为 {{fee}} {{coin}} 的交易已被拒绝。超过了交易允许的最大额度。"
+msgstr "总数为 {{fee}} VCL 的交易已被拒绝。超过了交易允许的最大额度。"
 
 msgid "A total of {{fee}} {{coin}} were excluded. These funds come from UTXOs smaller than the network fee provided."
-msgstr "总数为 {{fee}} {{coin}} 的交易已被拒绝。UTXOs积分少于提供的交易手续费。"
+msgstr "总数为 {{fee}} VCL 的交易已被拒绝。UTXOs积分少于提供的网络手续费。"
 
 msgid "About"
 msgstr "关于"
 
 msgid "About {{appName}}"
-msgstr "关于 {{appName}}"
+msgstr "关于 Vircle Copay"
 
 msgid "Accept"
 msgstr "同意"
@@ -93,7 +93,7 @@ msgid "Add funds"
 msgstr "添加积分"
 
 msgid "Add gift cards to your {appName} wallet from brands like Amazon, Delta, Google Play, and Uber."
-msgstr "将礼品卡添加到您的 {appName} 来自亚马逊、德尔塔、谷歌游戏和 uber 等品牌的钱包"
+msgstr "将礼品卡添加到您的 VirCle Copay 来自亚马逊、德尔塔、谷歌游戏和 uber 等品牌的钱包"
 
 msgid "Add this BitPay account ({{email}})?"
 msgstr "添加该BitPay账户({{email}})?"
@@ -168,7 +168,7 @@ msgid "Apply changes"
 msgstr "应用更改"
 
 msgid "Approximate network fee to transfer wallet's balance (with normal priority)"
-msgstr "该笔交易的大约交易手续费 (正常优先级)"
+msgstr "该笔交易的大约网络手续费 (正常优先级)"
 
 msgid "Archive All {brand} Gift Cards?"
 msgstr "存档所有的 {brand} 礼品卡？"
@@ -240,7 +240,7 @@ msgid "Be sure to store your recovery phrase in a secure place. If this app is d
 msgstr "一定要把你的助记词放在一个安全的地方。如果这个应用程序被删除，没有它,你的积分将丢失."
 
 msgid "Because you are sending the maximum amount contained in this wallet, the {coinName} miner fee ({fee} {coin}) will be deducted from the total. {msg}"
-msgstr "由于您将发送此钱包中包含的最大金额，交易手续费{fee} {coin}将从总金额中扣除. {msg}"
+msgstr "由于您将发送此钱包中包含的最大金额，网络手续费{fee} VCL将从总金额中扣除. {msg}"
 
 msgid "Before retrieving your wallet address, it's recommended that you first write down your recovery phrase and store it securely so that your wallet can be recovered in the case your device was lost or stolen."
 msgstr "在找回你的钱包地址之前，建议你先把你的助记词写下来并妥善保管，这样你的钱包就可以在你的设备丢失或被盗的情况下被找回来."
@@ -465,7 +465,7 @@ msgid "Copied to clipboard"
 msgstr "已复制到剪贴板"
 
 msgid "Copied {coin} address"
-msgstr "复制 {coin} 地址"
+msgstr "复制 VCL 地址"
 
 msgid "Copied: {claimCode}"
 msgstr "复制: {claimCode}"
@@ -858,7 +858,7 @@ msgid "Fee rate"
 msgstr "费用费率"
 
 msgid "Fee:"
-msgstr "交易手续费："
+msgstr "积分手续费："
 
 msgid "Feedback"
 msgstr "反馈"
@@ -996,7 +996,7 @@ msgid "Home"
 msgstr "主屏幕"
 
 msgid "How satisfied are you with {{appName}} wallet?"
-msgstr "您对{{appName}}钱包是否满意?"
+msgstr "您对VirCle Copay钱包是否满意?"
 
 msgid "I agree to the Terms and certify that I am the beneficial owner of the input assets and the destination address."
 msgstr "本人同意条款，并证明本人是输入资产及目的地地址的实益拥有人。"
@@ -1221,13 +1221,13 @@ msgid "Merchant fee too high. Payment rejected"
 msgstr "商户费过高。支付已拒绝。"
 
 msgid "Miner Fee"
-msgstr "交易手续费"
+msgstr "网络手续费"
 
 msgid "Miner Fee Notice"
-msgstr "交易手续费通知"
+msgstr "网络手续费通知"
 
 msgid "Miner fee"
-msgstr "交易手续费"
+msgstr "网络手续费"
 
 msgid "Minimum amount required is {{min}}"
 msgstr "所需最小金额是{{min}}"
@@ -1293,7 +1293,7 @@ msgid "New wallet"
 msgstr "新钱包"
 
 msgid "New {appName} desktop platform"
-msgstr "新建 {appName} 桌面平台"
+msgstr "新建 VirCle Copay 桌面平台"
 
 msgid "No"
 msgstr "无"
@@ -1656,7 +1656,7 @@ msgid "Purchased Brands"
 msgstr "购买的品牌"
 
 msgid "Push notifications for {{appName}} are currently disabled. Enable them in the Settings app."
-msgstr "{{appName}} 的推式通知当前已禁用。在设置应用程序启用它们。"
+msgstr "VirCle Copay 的推式通知当前已禁用。在设置应用程序启用它们。"
 
 msgid "QR Code"
 msgstr "二维码"
@@ -1695,7 +1695,7 @@ msgid "Receiving"
 msgstr "接收"
 
 msgid "Receiving {coinName} address"
-msgstr "接收 {coinName} 地址"
+msgstr "接收 Vircle 地址"
 
 msgid "Recent"
 msgstr "最近"
@@ -1944,7 +1944,7 @@ msgid "Share this invitation with your copayers"
 msgstr "将此邀请与你的 copayers 共享"
 
 msgid "Share {{appName}}"
-msgstr "分享 {{appName}}"
+msgstr "分享 VirCle Copay"
 
 msgid "Shop Now"
 msgstr "立即购买"
@@ -2199,7 +2199,7 @@ msgid "Top up in progress..."
 msgstr "在进展充值..."
 
 msgid "Top-up with this cryptocurrency is not enabled"
-msgstr "未启用该加密积分的充值"
+msgstr "未启用该加密货币的充值"
 
 msgid "Total"
 msgstr "总计"
@@ -2553,7 +2553,7 @@ msgid "Yes, skip"
 msgstr "是的，请跳过"
 
 msgid "You are trying to send ({amount} {coin}) more than what your wallet contains. Please enter a lower amount or send max."
-msgstr "您尝试发送 ({amount} {coin}) 超过您的钱包的金额。请输入较低的金额或发送金额的最大值。"
+msgstr "您尝试发送 ({amount} VCL 超过您的钱包的金额。请输入较低的金额或发送金额的最大值。"
 
 msgid "You can back up your wallet later from your wallet settings."
 msgstr "以后您可以从钱包设置中备份您的钱包。"
@@ -2592,7 +2592,7 @@ msgid "You should not set a fee higher than {{maxFeeRecommended}} satoshis/byte.
 msgstr "你不应设置高于 {{maxFeeRecommended}} satoshis/字节 的交易手续费。"
 
 msgid "You wallet is generating interest on your VCL coins and you are helping to secure the Vircle network at the same time!"
-msgstr "您的钱包正在生成您的VCL币，你同时亦在帮助维护Vircle 网络的安全。"
+msgstr "您的钱包正在生成您的PART币，你同时亦在帮助维护Vircle 网络的安全。"
 
 msgid "Your BitPay Card is ready. Add funds to your card to start using it at stores and ATMs worldwide."
 msgstr "您的 BitPay 卡是准备好了。添加到您的卡开始使用它在商店和自动取款机全球基金。"
@@ -2607,10 +2607,10 @@ msgid "Your name"
 msgstr "您的名字："
 
 msgid "Your vircle wallet is ready!"
-msgstr "你的钱包已准备好了 ！"
+msgstr "你的钱包是准备好了 ！"
 
 msgid "Your wallet address is similar to a bank account number. You can add funds to your wallet by withdrawing funds you may have stored on an exchange to your wallet address. Or other {coinName} users can send you money by scanning your QR code."
-msgstr "您的钱包地址类似于银行帐号。您可以通过交易所中的积分提取来将积分提取到您的钱包中。其他 {coinName} 用户可以通过扫描您的二维码向您汇款。"
+msgstr "您的钱包地址类似于银行帐号。您可以通过交易所中的积分提取来将积分提取到您的钱包中。其他 Vircle 用户可以通过扫描您的二维码向您汇款。"
 
 msgid "Your wallet is never saved to cloud storage or standard device backups."
 msgstr "你的钱包是永远不会保存到云存储或标准设备备份。"
@@ -2646,19 +2646,19 @@ msgid "preparing..."
 msgstr "准备中..."
 
 msgid "{appName} BCH wallets use the CashAddr format by default"
-msgstr "{appName} BCH 钱包默认使用CashAddr格式"
+msgstr "Vircle Copay BCH 钱包默认使用CashAddr格式"
 
 msgid "{coinName} miner fees are high due to record demand for limited space on the {coinName} network. Vircle does not receive and does not control {coinName} miner fees."
-msgstr "{coinName}手续费很高，因为交易需要空间存储在{coinName}网络。Vircle不接受也不控制交易手续费"
+msgstr "Vircle手续费很高，因为交易需要空间存储在Vircle网络。Vircle不接受也不控制网络手续费"
 
 msgid "{coinName} miner fees unusually high"
-msgstr "{coinName} 手续费非常高"
+msgstr "Vircle 手续费非常高"
 
 msgid "{{appName}} depends on Bitcore Wallet Service (BWS) for blockchain information, networking and Copayer synchronization. The default configuration points to https://bwsby.vpubchain.com (Vircle's public BWS instance)."
-msgstr "{{appName}}依赖Bitcore Wallet Service(BWS)进行区块链信息、网络和复制层同步。默认配置指向https：/bws.vpubchain.com(Vircle's public BWS instance)。"
+msgstr "Vircle Copay 依赖Bitcore Wallet Service(BWS)进行区块链信息、网络和复制层同步。默认配置指向https：/bwsby.vpubchain.com(Vircle's public BWS instance)。"
 
 msgid "{{fee}} {{coin}} will be deducted for bitcoin networking fees."
-msgstr "{{fee}}{{coin}} 将扣除网络费"
+msgstr "{{fee}} VCL 将扣除网络费"
 
 msgid "{{updatingTxHistoryProgress}} transactions downloaded"
 msgstr "下载的 {{updatingTxHistoryProgress}} 交易"

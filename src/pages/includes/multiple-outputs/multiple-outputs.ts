@@ -46,10 +46,6 @@ export class MultipleOutputsPage {
       if(pos>=0){
         output.amountStr = output.amountStr.substring(0,pos)+'VCL';
       }
-      let pos1 =output.amountStr.indexOf("part");
-      if(pos1>=0){
-        output.amountStr = output.amountStr.substring(0,pos1)+'vcl';
-      }
     });
 
     this.contact();

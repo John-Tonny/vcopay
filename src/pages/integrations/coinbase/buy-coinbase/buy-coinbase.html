@@ -12,7 +12,7 @@
         <span>Buying</span>
       </div>
       <div class="amount-label">
-        <div class="amount">{{amountUnitStr.toUpperCase()=='PART'?'VCL':btx.amountUnitStr}}</div>
+        <div class="amount">{{amountUnitStr=='PART'?'VCL':btx.amountUnitStr}}</div>
         <div class="alternative" *ngIf="buyPrice">
           <span ng-show="isFiat">{{buyRequestInfo.amount.amount}} {{buyRequestInfo.amount.currency}}</span> @ ${{buyPrice.amount}} per BTC
         </div>

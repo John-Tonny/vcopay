@@ -21,9 +21,9 @@
     </info-sheet-template>
 
     <info-sheet-template *ngSwitchCase="'receiving-bitcoin'" type="info">
-      <span sheet-title-text>{{'Receiving {coinName} address' | translate: {coinName: params.coinName=='Particl'?'Vircle':params.coinName } }}</span>
+      <span sheet-title-text>{{'Receiving {coinName} address' | translate: {coinName: params.coinName } }}</span>
       <span sheet-text>
-        {{'Your wallet address is similar to a bank account number. You can add funds to your wallet by withdrawing funds you may have stored on an exchange to your wallet address. Or other {coinName} users can send you money by scanning your QR code.' | translate: {coinName: params.coinName=='Particl'?'Vircle':params.coinName} }}
+        {{'Your wallet address is similar to a bank account number. You can add funds to your wallet by withdrawing funds you may have stored on an exchange to your wallet address. Or other {coinName} users can send you money by scanning your QR code.' | translate: {coinName: params.coinName} }}
       </span>
       <span sheet-button-text translate>GOT IT</span>
     </info-sheet-template>
@@ -40,15 +40,15 @@
     <info-sheet-template *ngSwitchCase="'miner-fee-notice'" type="warning">
       <span sheet-title-text translate>Miner Fee Notice</span>
       <span sheet-text>
-        {{'Because you are sending the maximum amount contained in this wallet, the {coinName} miner fee ({fee} {coin}) will be deducted from the total. {msg}' | translate: {coinName: params.coinName=='Particl'?'Vircle':params.coinName, fee: params.fee, coin:params.coin=='PART'?'VCL':params.coin, msg: params.msg} }}
+        {{'Because you are sending the maximum amount contained in this wallet, the {coinName} miner fee ({fee} {coin}) will be deducted from the total. {msg}' | translate: {coinName: params.coinName, fee: params.fee, coin:params.coin=='PART'?'VCL':params.coin, msg: params.msg} }}
       </span>
       <span sheet-button-text translate>GOT IT</span>
     </info-sheet-template>
 
     <info-sheet-template *ngSwitchCase="'miner-fee'" type="danger">
-      <span sheet-title-text>{{ '{coinName} miner fees unusually high' | translate: {coinName: params.coinName=='Particl'?'Vircle':params.coinName } }}</span>
+      <span sheet-title-text>{{ '{coinName} miner fees unusually high' | translate: {coinName: params.coinName } }}</span>
       <span sheet-text>
-        {{ '{coinName} miner fees are high due to record demand for limited space on the {coinName} network. Vircle does not receive and does not control {coinName} miner fees.' | translate: {coinName: params.coinName=='Particl'?'Vircle':params.coinName } }}
+        {{ '{coinName} miner fees are high due to record demand for limited space on the {coinName} network. Vircle does not receive and does not control {coinName} miner fees.' | translate: {coinName: params.coinName } }}
       </span>
       <span sheet-button-text translate>GOT IT</span>
     </info-sheet-template>
@@ -56,7 +56,7 @@
     <info-sheet-template *ngSwitchCase="'insufficient-funds'" type="danger">
       <span sheet-title-text translate>Not enough funds</span>
       <span sheet-text>
-        {{ 'You are trying to send ({amount} {coin}) more than what your wallet contains. Please enter a lower amount or send max.' | translate: {amount: params.amount, coin: params.coin=='part'?'vcl':params.coin | uppercase} }}
+        {{ 'You are trying to send ({amount} {coin}) more than what your wallet contains. Please enter a lower amount or send max.' | translate: {amount: params.amount, coin: params.coin=='PART'?'VCL':params.coin | uppercase} }}
       </span>
       <span sheet-button-text translate>Change Amount</span>
       <span sheet-second-button-text translate>Send Max</span>
@@ -78,7 +78,7 @@
     </info-sheet-template>
 
     <info-sheet-template *ngSwitchCase="'backup-ready'" type="success">
-      <span sheet-title-text>{{'Your {walletType} wallet is backed up!' | translate : {walletType: params.walletType=='particl'?'vircle':params.walletType}
+      <span sheet-title-text>{{'Your {walletType} wallet is backed up!' | translate : {walletType: params.walletType}
         }}</span>
       <span sheet-text translate>
         Be sure to store your recovery phrase in a secure place. If this app is deleted, your money cannot be recovered without it.
@@ -135,7 +135,7 @@
 
     <info-sheet-template *ngSwitchCase="'below-minimum-gift-card-amount'" type="danger">
       <span sheet-title-text translate>Below Minimum Amount</span>
-      <span sheet-text>{{'The purchase amount must be at least {minAmount} VCL. Please modify your amount.' |
+      <span sheet-text>{{'The purchase amount must be at least {minAmount} {currency}. Please modify your amount.' |
         translate: params }}</span>
       <span sheet-button-text translate>GOT IT</span>
     </info-sheet-template>
@@ -143,7 +143,7 @@
     <info-sheet-template *ngSwitchCase="'above-maximum-gift-card-amount'" type="danger">
       <span sheet-title-text translate>Purchase Limit Reached</span>
       <span sheet-text>
-        {{'The purchase amount is limited to {maxAmount} VCL per day. Please modify your amount.' |
+        {{'The purchase amount is limited to {maxAmount} {currency} per day. Please modify your amount.' |
         translate:params }}
       </span>
       <span sheet-button-text translate>GOT IT</span>

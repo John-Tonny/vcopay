@@ -212,11 +212,6 @@ export class TxDetailsPage {
         if(pos>=0){
           this.btx.feeStr = this.btx.feeStr.substring(0,pos)+'VCL';
         }
-        let pos1 =this.btx.feeStr.indexOf("part");
-        if(pos1>=0){
-          this.btx.feeStr = this.btx.feeStr.substring(0,pos1)+'vcl';
-        }
-
 
         this.walletProvider
           .getLowAmount(this.wallet)

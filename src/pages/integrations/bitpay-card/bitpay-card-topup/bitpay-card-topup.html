@@ -15,7 +15,7 @@
         <div class="amount">{{amountUnitStr}}</div>
         <div class="alternative" *ngIf="wallet">
           <span *ngIf="rate">
-            @ {{rate | number:'1.2-2'}} {{currencyIsoCode}} per {{wallet.coin.toUpperCase()=='PART'?'VCL':wallet.coin.toUpperCase()}}
+            @ {{rate | number:'1.2-2'}} {{currencyIsoCode}} per {{wallet.coin.toUpperCase()}}
           </span>
           <span *ngIf="!rate">...</span>
         </div>

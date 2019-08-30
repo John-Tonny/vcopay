@@ -54,9 +54,6 @@ export class WalletInformationPage {
     this.wallet = this.profileProvider.getWallet(this.navParams.data.walletId);
     this.walletName = this.wallet.name;
     this.coin = this.wallet.coin;
-    if (this.coin=='part'){
-      this.coin = 'vcl';
-    }
     this.walletId = this.wallet.credentials.walletId;
     this.N = this.wallet.credentials.n;
     this.M = this.wallet.credentials.m;

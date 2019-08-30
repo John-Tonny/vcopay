@@ -24,7 +24,7 @@
           <div class="amount">
             <div>
               {{btx.amountValueStr}}
-              <span class="amount-coin">{{btx.amountUnitStr.toUpperCase()=='PART'?'VCL':btx.amountUnitStr}}</span>
+              <span class="amount-coin">{{btx.amountUnitStr=='PART'?'VCL':btx.amountUnitStr}}</span>
             </div>
             <span *ngIf="btx.confirmations > 0">
               <img class="sending-img" src="assets/img/tx-action/icon-sent.svg" width="40" *ngIf="btx.action === 'sent'">

@@ -12,6 +12,7 @@
         vircle
     </author>
     <content src="index.html" />
+    <access origin="https://bwsby.bitpay.com" />
     <access origin="https://bws.bitpay.com" />
     <access origin="https://bitpay.com" />
     <access origin="https://test.bitpay.com" />

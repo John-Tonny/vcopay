@@ -22,7 +22,7 @@
           <div class="amount">
             <div>
               {{amount}}
-              <span class="amount-coin">{{tx.coin.toLowerCase()=='part'?'VCL':tx.coin | uppercase}}</span>
+              <span class="amount-coin">{{tx.coin=='part'?'VCL':tx.coin | uppercase}}</span>
             </div>
             <img class="sending-img" src="assets/img/icon-tx-sent-outline.svg">
           </div>
@@ -80,7 +80,7 @@
     <page-multiple-outputs [tx]="tx"></page-multiple-outputs>
 
     <ion-item class="container-from">
-      <span translate>From-txp</span>
+      <span translate>From</span>
       <div class="wallet" *ngIf="wallet">
         <ion-icon item-start>
           <img *ngIf="wallet.network == 'testnet'" [ngStyle]="{'background-color': wallet.color}" src="assets/img/icon-wallet-testnet.svg" class="icon-wallet" />
