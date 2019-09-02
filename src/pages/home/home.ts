@@ -58,7 +58,7 @@ export class HomePage {
   public walletsBtc;
   public walletsBch;
   public walletsPart;
-  // public walletsPart2;
+  public walletsPart1;
   public cachedBalanceUpdateOn: string;
   public recentTransactionsEnabled: boolean;
   public txps;
@@ -82,6 +82,7 @@ export class HomePage {
   public showReorderBtc: boolean;
   public showReorderBch: boolean;
   public showReorderPart: boolean;
+  public showReorderPart1: boolean;
   public showIntegration;
   public hideHomeIntegrations: boolean;
   public showGiftCards: boolean;
@@ -126,6 +127,7 @@ export class HomePage {
     this.showReorderBtc = false;
     this.showReorderBch = false;
     this.showReorderPart = false;
+    this.showReorderPart1 = false;
     this.zone = new NgZone({ enableLongStackTrace: false });
     this.events.subscribe('Home/reloadStatus', () => {
       this._willEnter();
@@ -387,6 +389,9 @@ export class HomePage {
         return x.credentials.coin == 'bch';
       });
       this.walletsPart = _.filter(this.wallets, (x: any) => {
+        return x.credentials.coin == 'part' && x.baseUrl == BwsUrl.vircle;
+      });
+      this.walletsPart1 = _.filter(this.wallets, (x: any) => {
         return x.credentials.coin == 'part' && x.baseUrl == BwsUrl.benyuan;
       });
       this.updateAllWallets();
@@ -700,7 +705,7 @@ export class HomePage {
   }
 
   public goToWalletDetails(wallet): void {
-    if (this.showReorderBtc || this.showReorderBch || this.showReorderPart)
+    if (this.showReorderBtc || this.showReorderBch || this.showReorderPart || this.showReorderPart1)
       return;
     this.events.unsubscribe('finishIncomingDataMenuEvent');
     this.events.unsubscribe('bwsEvent');
@@ -750,6 +755,10 @@ export class HomePage {
     this.showReorderPart = !this.showReorderPart;
   }
 
+  public reorderPart1(): void {
+    this.showReorderPart1 = !this.showReorderPart1;
+  }
+
   public reorderWalletsBtc(indexes): void {
     let element = this.walletsBtc[indexes.from];
     this.walletsBtc.splice(indexes.from, 1);
@@ -773,6 +782,15 @@ export class HomePage {
     this.walletsPart.splice(indexes.from, 1);
     this.walletsPart.splice(indexes.to, 0, element);
     _.each(this.walletsPart, (wallet, index: number) => {
+      this.profileProvider.setWalletOrder(wallet.id, index);
+    });
+  }
+
+  public reorderWalletsPart1(indexes): void {
+    let element = this.walletsPart1[indexes.from];
+    this.walletsPart1.splice(indexes.from, 1);
+    this.walletsPart1.splice(indexes.to, 0, element);
+    _.each(this.walletsPart1, (wallet, index: number) => {
       this.profileProvider.setWalletOrder(wallet.id, index);
     });
   }

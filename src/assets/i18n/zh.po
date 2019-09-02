@@ -1461,7 +1461,10 @@ msgid "Vircle URI"
 msgstr "Vircle URL"
 
 msgid "Vircle Wallets"
-msgstr "Vircle 钱包"
+msgstr "久零钱包"
+
+msgid "Benyuan Wallets"
+msgstr "本元钱包"
 
 msgid "Vircle is a currency."
 msgstr "Vircle是一种积分。"

@@ -23,6 +23,7 @@ export interface FlatWallet {
   n: number;
   needsBackup: boolean;
   isComplete: () => boolean;
+  baseUrl: string;
   getAddress: () => Promise<string>;
 }
 
@@ -171,6 +172,7 @@ export class TransferToPage {
       n: wallet.credentials.n,
       isComplete: wallet.isComplete(),
       needsBackup: wallet.needsBackup,
+      baseUrl: wallet.baseUrl,
       getAddress: () => this.walletProvider.getAddress(wallet, false)
     };
   }
@@ -178,10 +180,11 @@ export class TransferToPage {
   private filterIrrelevantRecipients(recipient: {
     coin: string;
     network: string;
+    baseUrl: string;
   }): boolean {
     return this._wallet
       ? this._wallet.coin === recipient.coin &&
-          this._wallet.network === recipient.network
+          this._wallet.network === recipient.network && this._wallet.baseUrl === recipient.baseUrl
       : true;
   }
 
