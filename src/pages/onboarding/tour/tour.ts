@@ -111,10 +111,13 @@ export class TourPage {
         type: 'radio',
         label: '',
         value: '',
-        checked: true
+        checked: false
       };
       obj.value = BwsUrl[id];
       obj.name = 'radio' + nums.toString();
+      if(nums==0){
+        obj.checked = true;
+      }
       conf.inputs.push(obj);
       nums ++;
     }
@@ -123,43 +126,24 @@ export class TourPage {
       conf.inputs[nums].label = BwsName[name];
       nums ++;
     }
-
     const myalert = this.alertCtrl.create(conf);
-      /*{
-      title: '钱包服务提供商',
-      inputs: [],
-      inputs: [
-        {
-          name: 'radio1',
-          type: 'radio',
-          label: '久零',
-          value: 'https://bws.vpubchain.com/bws/api',
-          checked: true
-        },
-        {
-          name: 'radio2',
-          type: 'radio',
-          label: '本元',
-          value: 'https://bwsby.vpubchain.com/bws/api'
-        }
-      ],
-      buttons: [
-        {
-          text: '取消'
-        },
-        {
-          text: '确定',
-          handler: (bwsurl) => {
-            this.createDefaultWallet(bwsurl);
-          }
-        }
-      ]
-    });*/
     myalert.present();
   }
 
   public selectBwsURL(): void {
-    this.myAlert();
+    var nums: number = 0;
+    for (var _ in BwsUrl) {
+      nums ++;
+    }
+    nums = 0;
+    for (var _ in BwsName) {
+      nums ++;
+    }
+    if(nums>1) {
+      this.myAlert();
+    }else{
+      this.createDefaultWallet(BwsUrl[0]);
+    }
   }
 
   public createDefaultWallet(bwsurl): void {
