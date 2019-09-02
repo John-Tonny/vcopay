@@ -39,7 +39,8 @@ import { HomeIntegrationsProvider } from '../../providers/home-integrations/home
 import { IncomingDataProvider } from '../../providers/incoming-data/incoming-data';
 import { Logger } from '../../providers/logger/logger';
 import { OnGoingProcessProvider } from '../../providers/on-going-process/on-going-process';
-import { PersistenceProvider } from '../../providers/persistence/persistence';
+
+import { BwsUrl, PersistenceProvider } from '../../providers/persistence/persistence';
 import { PlatformProvider } from '../../providers/platform/platform';
 import { PopupProvider } from '../../providers/popup/popup';
 import { ProfileProvider } from '../../providers/profile/profile';
@@ -57,6 +58,7 @@ export class HomePage {
   public walletsBtc;
   public walletsBch;
   public walletsPart;
+  // public walletsPart2;
   public cachedBalanceUpdateOn: string;
   public recentTransactionsEnabled: boolean;
   public txps;
@@ -385,7 +387,7 @@ export class HomePage {
         return x.credentials.coin == 'bch';
       });
       this.walletsPart = _.filter(this.wallets, (x: any) => {
-        return x.credentials.coin == 'part';
+        return x.credentials.coin == 'part' && x.baseUrl == BwsUrl.benyuan;
       });
       this.updateAllWallets();
     },

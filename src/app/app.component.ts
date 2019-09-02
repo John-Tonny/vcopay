@@ -228,6 +228,8 @@ export class CopayApp {
     this.emailNotificationsProvider.init(); // Update email subscription if necessary
     this.initPushNotifications();
 
+    // var bb: boolean = false;
+
     if (profile) {
       this.logger.info('Profile exists.');
 
@@ -245,6 +247,7 @@ export class CopayApp {
       this.profile.createProfile();
       this.rootPage = OnboardingPage;
     }
+
     if (this.platform.is('cordova')) this.splashScreen.hide();
   }
 

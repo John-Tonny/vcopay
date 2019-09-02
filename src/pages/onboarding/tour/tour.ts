@@ -1,6 +1,7 @@
 import { Component, ViewChild } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import {
+  AlertController,
   LoadingController,
   Navbar,
   NavController,
@@ -10,11 +11,12 @@ import { Logger } from '../../../providers/logger/logger';
 
 // pages
 import { BackupRequestPage } from '../backup-request/backup-request';
+
+import {BwsName, BwsUrl, PersistenceProvider} from "../../../providers/persistence/persistence";
 // import { CollectEmailPage } from '../collect-email/collect-email';
 
 // providers
 import { OnGoingProcessProvider } from '../../../providers/on-going-process/on-going-process';
-import { PersistenceProvider } from '../../../providers/persistence/persistence';
 import { PopupProvider } from '../../../providers/popup/popup';
 import { ProfileProvider } from '../../../providers/profile/profile';
 import { RateProvider } from '../../../providers/rate/rate';
@@ -37,6 +39,7 @@ export class TourPage {
   private retryCount: number = 0;
 
   constructor(
+    public alertCtrl: AlertController,
     public navCtrl: NavController,
     public loadingCtrl: LoadingController,
     private logger: Logger,
@@ -84,10 +87,85 @@ export class TourPage {
     this.slides.slideNext();
   }
 
-  public createDefaultWallet(): void {
+  public myAlert(): void {
+    var conf = {
+      title: '钱包服务提供商',
+      inputs: [],
+      buttons: [
+        {
+          text: '取消'
+        },
+        {
+          text: '确定',
+          handler: (bwsurl) => {
+            this.createDefaultWallet(bwsurl);
+          }
+        }
+      ]
+    }
+
+    var nums: number = 0;
+    for (var id in BwsUrl) {
+      var obj = {
+        name: '',
+        type: 'radio',
+        label: '',
+        value: '',
+        checked: true
+      };
+      obj.value = BwsUrl[id];
+      obj.name = 'radio' + nums.toString();
+      conf.inputs.push(obj);
+      nums ++;
+    }
+    nums = 0;
+    for (var name in BwsName) {
+      conf.inputs[nums].label = BwsName[name];
+      nums ++;
+    }
+
+    const myalert = this.alertCtrl.create(conf);
+      /*{
+      title: '钱包服务提供商',
+      inputs: [],
+      inputs: [
+        {
+          name: 'radio1',
+          type: 'radio',
+          label: '久零',
+          value: 'https://bws.vpubchain.com/bws/api',
+          checked: true
+        },
+        {
+          name: 'radio2',
+          type: 'radio',
+          label: '本元',
+          value: 'https://bwsby.vpubchain.com/bws/api'
+        }
+      ],
+      buttons: [
+        {
+          text: '取消'
+        },
+        {
+          text: '确定',
+          handler: (bwsurl) => {
+            this.createDefaultWallet(bwsurl);
+          }
+        }
+      ]
+    });*/
+    myalert.present();
+  }
+
+  public selectBwsURL(): void {
+    this.myAlert();
+  }
+
+  public createDefaultWallet(bwsurl): void {
     this.onGoingProcessProvider.set('creatingWallet');
     this.profileProvider
-      .createDefaultWallet()
+      .createDefaultWallet(bwsurl)
       .then(wallet => {
         this.onGoingProcessProvider.clear();
         this.persistenceProvider.setOnboardingCompleted();
@@ -105,10 +183,10 @@ export class TourPage {
             let okText = this.translate.instant('Retry');
             this.popupProvider.ionicAlert(title, err, okText).then(() => {
               this.retryCount = 0;
-              this.createDefaultWallet();
+              this.createDefaultWallet(bwsurl);
             });
           } else {
-            this.createDefaultWallet();
+            this.createDefaultWallet(bwsurl);
           }
         }, 2000);
       });

@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { TranslateService } from '@ngx-translate/core';
 import { App, Events, NavController, NavParams } from 'ionic-angular';
+import {BwsName, BwsUrl} from "../../../providers/persistence/persistence";
 
 // Pages
 import { ScanPage } from '../../scan/scan';
@@ -23,16 +24,18 @@ import {
   WalletProvider
 } from '../../../providers/wallet/wallet';
 
+
 @Component({
   selector: 'page-join-wallet',
   templateUrl: 'join-wallet.html'
 })
 export class JoinWalletPage {
-  private defaults;
+  public defaults;
   public showAdvOpts: boolean;
   public seedOptions;
   public okText: string;
   public cancelText: string;
+  public bwsURLOptions;
 
   private derivationPathByDefault: object;
   private derivationPathForTestnet: string;
@@ -73,12 +76,32 @@ export class JoinWalletPage {
         null,
         [Validators.required, Validators.pattern(this.regex)]
       ], // invitationCode == secret
-      bwsURL: [this.defaults.bws.url],
+      // bwsURL: [this.defaults.bws.url],
+      bwsURL: ['https://bws.vpubchain.com/bws/api'],
       selectedSeed: ['new'],
       recoveryPhrase: [null],
       derivationPath: [this.derivationPathByDefault['part']],
       coin: ['part', Validators.required]
     });
+
+    this.bwsURLOptions = [];
+    var nums: number = 0;
+    for (var id in BwsUrl) {
+      var obj = {
+        id: '',
+        label: '',
+        supportsTestnet: true
+      };
+      obj.id = BwsUrl[id];
+      this.bwsURLOptions.push(obj);
+      nums ++;
+    }
+    nums = 0;
+    for (var name in BwsName) {
+      this.bwsURLOptions[nums].label = BwsName[name];
+      nums ++;
+    }
+    this.joinForm.controls['bwsURL'].setValue(this.bwsURLOptions[0].id); // new or set
 
     this.seedOptions = [
       {

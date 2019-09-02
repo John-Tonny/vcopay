@@ -3,6 +3,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { TranslateService } from '@ngx-translate/core';
 import { App, Events, NavController, NavParams } from 'ionic-angular';
 import { Logger } from '../../../providers/logger/logger';
+import {BwsName, BwsUrl} from "../../../providers/persistence/persistence";
 
 // Pages
 import { DisclaimerPage } from '../../onboarding/disclaimer/disclaimer';
@@ -50,6 +51,8 @@ export class ImportWalletPage {
   public okText: string;
   public cancelText: string;
 
+  public bwsURLOptions;
+
   constructor(
     private app: App,
     private navCtrl: NavController,
@@ -87,6 +90,24 @@ export class ImportWalletPage {
     this.showAdvOpts = false;
     this.formFile = null;
 
+    this.bwsURLOptions = [];
+    var nums: number = 0;
+    for (var id in BwsUrl) {
+      var obj = {
+        id: '',
+        label: '',
+        supportsTestnet: true
+      };
+      obj.id = BwsUrl[id];
+      this.bwsURLOptions.push(obj);
+      nums ++;
+    }
+    nums = 0;
+    for (var name in BwsName) {
+      this.bwsURLOptions[nums].label = BwsName[name];
+      nums ++;
+    }
+
     this.importForm = this.form.group({
       words: [null, Validators.required],
       backupText: [null],
@@ -101,6 +122,9 @@ export class ImportWalletPage {
       bwsURL: [this.defaults.bws.url],
       coin: ['part', Validators.required]
     });
+
+    this.importForm.controls['bwsURL'].setValue(this.bwsURLOptions[0].id); // new or set
+
     this.events.subscribe('update:words', data => {
       this.processWalletInfo(data.value);
     });
@@ -193,6 +217,7 @@ export class ImportWalletPage {
     this.importForm.controls['derivationPath'].setValue(info.derivationPath);
     this.importForm.controls['words'].setValue(info.data);
     this.importForm.controls['coin'].setValue(info.coin);
+
   }
 
   public setDerivationPath(): void {

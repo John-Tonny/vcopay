@@ -109,9 +109,13 @@
       </div>
 
       <ion-item>
-        <ion-label stacked>Wallet Service URL</ion-label>
-        <ion-input type="text" formControlName="bwsURL"></ion-input>
+        <ion-label stacked><span translate>Wallet Service URL</span></ion-label>
+        <!--ion-input type="text" formControlName="bwsURL"></ion-input-->
+        <ion-select okText="{{okText}}" cancelText="{{cancelText}}" formControlName="bwsURL" >
+          <ion-option *ngFor="let opt of bwsURLOptions" [value]="opt.id">{{opt.label}}({{opt.id}})</ion-option>
+        </ion-select>
       </ion-item>
+
 
     </div>
   </form>

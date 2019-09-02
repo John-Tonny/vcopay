@@ -20,6 +20,21 @@ export interface FeedbackValues {
   sent: boolean;
 }
 
+export enum BwsName {
+    vircle = '久零',
+    benyuan = '本元'
+}
+
+export enum BwsUrl {
+  vircle = 'https://bws.vpubchain.com/bws/api',
+  benyuan = 'https://bwsby.vpubchain.com/bws/api'
+}
+
+export enum ExplorerUrl {
+  vircle = '52.82.14.25:3001',
+  benyuan = '52.82.13.116:3001'
+}
+
 export interface GiftCardMap {
   [invoiceId: string]: GiftCard;
 }
@@ -59,7 +74,9 @@ const Keys = {
   TX_HISTORY: walletId => 'txsHistory-' + walletId,
   ORDER_WALLET: walletId => 'order-' + walletId,
   SERVER_MESSAGE_DISMISSED: 'serverMessageDismissed',
-  SHAPESHIFT_TOKEN: network => 'shapeshiftToken-' + network
+  SHAPESHIFT_TOKEN: network => 'shapeshiftToken-' + network,
+  LAST_BWS_URL: 'https://bws.vpubchain.com/bws/api',
+  LAST_EXPLORER_URL: '52.82.13.116:3001'
 };
 
 interface Storage {

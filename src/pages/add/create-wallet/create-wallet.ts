@@ -3,6 +3,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { TranslateService } from '@ngx-translate/core';
 import { Events, NavController, NavParams } from 'ionic-angular';
 import { Logger } from '../../../providers/logger/logger';
+import {BwsName, BwsUrl} from "../../../providers/persistence/persistence";
 
 // Providers
 import { ConfigProvider } from '../../../providers/config/config';
@@ -18,6 +19,7 @@ import {
 } from '../../../providers/wallet/wallet';
 
 import * as _ from 'lodash';
+
 
 @Component({
   selector: 'page-create-wallet',
@@ -55,6 +57,8 @@ export class CreateWalletPage implements OnInit {
   public cancelText: string;
   public createForm: FormGroup;
 
+  public bwsURLOptions;
+
   constructor(
     private navCtrl: NavController,
     private navParams: NavParams,
@@ -90,13 +94,14 @@ export class CreateWalletPage implements OnInit {
       myName: [null],
       totalCopayers: [1],
       requiredCopayers: [1],
-      bwsURL: [this.defaults.bws.url],
+      // bwsURL: [this.defaults.bws.url],
+      bwsURL: ['https://bws.vpubchain.com/bws/api'],
       selectedSeed: ['new'],
       recoveryPhrase: [null],
       derivationPath: [this.derivationPathByDefault['part']],
       testnetEnabled: [false],
       singleAddress: [false],
-      coin: ['part', Validators.required]
+      coin: ['part', Validators.required],
     });
 
     this.setTotalCopayers(this.tc);
@@ -113,6 +118,7 @@ export class CreateWalletPage implements OnInit {
     this.createForm.controls['totalCopayers'].setValue(n);
     this.updateRCSelect(n);
     this.updateSeedSourceSelect();
+    this.updateBwsURLSelect();
   }
 
   private updateRCSelect(n: number): void {
@@ -122,6 +128,27 @@ export class CreateWalletPage implements OnInit {
     this.createForm.controls['requiredCopayers'].setValue(
       Math.min(Math.trunc(n / 2 + 1), maxReq)
     );
+  }
+
+  private updateBwsURLSelect(): void {
+    this.bwsURLOptions = [];
+    var nums: number = 0;
+    for (var id in BwsUrl) {
+      var obj = {
+        id: '',
+        label: '',
+        supportsTestnet: true
+      };
+      obj.id = BwsUrl[id];
+      this.bwsURLOptions.push(obj);
+      nums ++;
+    }
+    nums = 0;
+    for (var name in BwsName) {
+      this.bwsURLOptions[nums].label = BwsName[name];
+      nums ++;
+    }
+    this.createForm.controls['bwsURL'].setValue(this.bwsURLOptions[0].id); // new or set
   }
 
   private updateSeedSourceSelect(): void {

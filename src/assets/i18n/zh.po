@@ -36,7 +36,7 @@ msgid "A total of {{amountAboveMaxSizeStr}} {{coin}} were excluded. The maximum 
 msgstr "总数为{{amountAboveMaxSizeStr}} VCL 的交易已被拒绝。超过了交易允许的最大额度。"
 
 msgid "A total of {{amountBelowFeeStr}} {{coin}} were excluded. These funds come from UTXOs smaller than the network fee provided."
-msgstr "总数为{{amountBelowFeeStr}} VCL 已被拒绝。UTXOs积分少于提供的网络手续费。"
+msgstr "总数为{{amountBelowFeeStr}} VCL 已被拒绝。UTXOs积分少于提供的交易手续费。"
 
 msgid "A total of {{amountStr}} ({{fiatAmount | number:'1.2-2'}} {{currencyIsoCode}}) will be exchanged for {{withdrawalStr}} ({{fiatWithdrawal | number:'1.2-2'}} {{currencyIsoCode}})."
 msgstr "总共{{fiatAmount | number:'1.2-2'}} {{currencyIsoCode}}将被替换为{{withdrawalStr} ({{fiatwithdraw | number:'1.2-2'}} {{currencyIsoCode}})"
@@ -45,7 +45,7 @@ msgid "A total of {{fee}} {{coin}} were excluded. The maximum size allowed for a
 msgstr "总数为 {{fee}} VCL 的交易已被拒绝。超过了交易允许的最大额度。"
 
 msgid "A total of {{fee}} {{coin}} were excluded. These funds come from UTXOs smaller than the network fee provided."
-msgstr "总数为 {{fee}} VCL 的交易已被拒绝。UTXOs积分少于提供的网络手续费。"
+msgstr "总数为 {{fee}} VCL 的交易已被拒绝。UTXOs积分少于提供的交易手续费。"
 
 msgid "About"
 msgstr "关于"
@@ -168,7 +168,7 @@ msgid "Apply changes"
 msgstr "应用更改"
 
 msgid "Approximate network fee to transfer wallet's balance (with normal priority)"
-msgstr "该笔交易的大约网络手续费 (正常优先级)"
+msgstr "该笔交易的大约交易手续费 (正常优先级)"
 
 msgid "Archive All {brand} Gift Cards?"
 msgstr "存档所有的 {brand} 礼品卡？"
@@ -240,7 +240,7 @@ msgid "Be sure to store your recovery phrase in a secure place. If this app is d
 msgstr "一定要把你的助记词放在一个安全的地方。如果这个应用程序被删除，没有它,你的积分将丢失."
 
 msgid "Because you are sending the maximum amount contained in this wallet, the {coinName} miner fee ({fee} {coin}) will be deducted from the total. {msg}"
-msgstr "由于您将发送此钱包中包含的最大金额，网络手续费{fee} VCL将从总金额中扣除. {msg}"
+msgstr "由于您将发送此钱包中包含的最大金额，交易手续费{fee} VCL将从总金额中扣除. {msg}"
 
 msgid "Before retrieving your wallet address, it's recommended that you first write down your recovery phrase and store it securely so that your wallet can be recovered in the case your device was lost or stolen."
 msgstr "在找回你的钱包地址之前，建议你先把你的助记词写下来并妥善保管，这样你的钱包就可以在你的设备丢失或被盗的情况下被找回来."
@@ -858,7 +858,7 @@ msgid "Fee rate"
 msgstr "费用费率"
 
 msgid "Fee:"
-msgstr "积分手续费："
+msgstr "交易手续费："
 
 msgid "Feedback"
 msgstr "反馈"
@@ -1197,7 +1197,7 @@ msgid "Locktime in effect. Please wait to remove this spend proposal"
 msgstr "Locktime 在进行中。请稍等以删除花费提议"
 
 msgid "Low Fee"
-msgstr "手续费太低"
+msgstr "交易手续费太低"
 
 msgid "Low amount inputs"
 msgstr "低额投入"
@@ -1221,13 +1221,13 @@ msgid "Merchant fee too high. Payment rejected"
 msgstr "商户费过高。支付已拒绝。"
 
 msgid "Miner Fee"
-msgstr "网络手续费"
+msgstr "交易手续费"
 
 msgid "Miner Fee Notice"
-msgstr "网络手续费通知"
+msgstr "交易手续费通知"
 
 msgid "Miner fee"
-msgstr "网络手续费"
+msgstr "交易手续费"
 
 msgid "Minimum amount required is {{min}}"
 msgstr "所需最小金额是{{min}}"
@@ -1398,7 +1398,7 @@ msgid "Off"
 msgstr "关闭"
 
 msgid "Ok"
-msgstr "还行"
+msgstr "确定"
 
 msgid "On"
 msgstr "开启"
@@ -1428,7 +1428,7 @@ msgid "Open GitHub Project"
 msgstr "打开 GitHub 项目"
 
 msgid "Open Insight"
-msgstr "开放的洞察力"
+msgstr "打开区块浏览器"
 
 msgid "Open Vircle Wiki"
 msgstr "打开 Vircle 维基"
@@ -1473,7 +1473,7 @@ msgid "Vircle is secure, digital money."
 msgstr "Vircle是安全的数字积分。"
 
 msgid "Vircle network fee policy"
-msgstr "积分网络手续费政策"
+msgstr "积分交易手续费政策"
 
 msgid "Vircle transactions include a fee collected by miners on the network."
 msgstr "积分交易包括在网络上被矿工所收取的费用。"
@@ -2001,7 +2001,7 @@ msgid "Spendable balance"
 msgstr "可用积分"
 
 msgid "Spending this balance will need significant network fees"
-msgstr "这笔交易将需要非常高的积分网络手续费"
+msgstr "这笔交易将需要非常高的交易手续费"
 
 msgid "Staking"
 msgstr "收益"
@@ -2071,6 +2071,9 @@ msgstr "全球最安全最快捷的资产交换"
 
 msgid "The Wallet Service URL"
 msgstr "钱包服务 URL"
+
+msgid "Wallet Service URL"
+msgstr "钱包服务提供商"
 
 msgid "The amount of funds immediately spendable from this wallet."
 msgstr "积分立即可从这个钱包的花费。"
@@ -2172,7 +2175,7 @@ msgid "This recovery phrase was created with a password. To recover this wallet 
 msgstr "此助记词是用密码创建。为了恢复此钱包，需要助记词和密码。"
 
 msgid "This transaction amount is too small compared to current network fees. Spending these funds will need a network fee cost comparable to the funds itself."
-msgstr "与当前的网络手续费相比, 此交易金额太小。这些交易将需要与交易金额相当的网络费用成本。"
+msgstr "与当前的交易手续费相比, 此交易金额太小。这些交易将需要与交易金额相当的网络费用成本。"
 
 msgid "This transaction could take a long time to confirm or could be dropped due to the low fees set by the sender."
 msgstr "当发送者设定的费用低，这笔交易可能需要很长时间才能确认或撤销。"
@@ -2367,7 +2370,7 @@ msgid "View Redemption Code"
 msgstr "查看兑换码"
 
 msgid "View Transaction on Insight"
-msgstr "查看交易记录的洞察"
+msgstr "在区块浏览器中查看交易记录"
 
 msgid "View Wallet Terms of Use"
 msgstr "查看钱包使用条款"
@@ -2376,7 +2379,7 @@ msgid "View all addresses"
 msgstr "查看所有地址"
 
 msgid "View on blockchain"
-msgstr "在 blockchain 上查看"
+msgstr "在区块链上查看"
 
 msgid "Vircle Copay"
 msgstr ""
@@ -2649,7 +2652,7 @@ msgid "{appName} BCH wallets use the CashAddr format by default"
 msgstr "Vircle Copay BCH 钱包默认使用CashAddr格式"
 
 msgid "{coinName} miner fees are high due to record demand for limited space on the {coinName} network. Vircle does not receive and does not control {coinName} miner fees."
-msgstr "Vircle手续费很高，因为交易需要空间存储在Vircle网络。Vircle不接受也不控制网络手续费"
+msgstr "Vircle手续费很高，因为交易需要空间存储在Vircle网络。Vircle不接受也不控制交易手续费"
 
 msgid "{coinName} miner fees unusually high"
 msgstr "Vircle 手续费非常高"

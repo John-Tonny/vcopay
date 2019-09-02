@@ -152,7 +152,6 @@
             </button>
           </div>
         </ion-item-divider>
-
         <ion-list reorder="{{showReorderPart}}" (ionItemReorder)="reorderWalletsPart($event)">
           <button ion-item *ngFor="let wallet of walletsPart" (click)="goToWalletDetails(wallet)">
             <ion-icon class="item-img" item-start>

@@ -1218,13 +1218,14 @@ export class ProfileProvider {
     });
   }
 
-  public createDefaultWallet(): Promise<any> {
+  public createDefaultWallet(bwsurl: string): Promise<any> {
     return new Promise((resolve, reject) => {
       const opts: Partial<WalletOptions> = {};
       opts.m = 1;
       opts.n = 1;
       opts.networkName = 'livenet';
       opts.coin = Coin.PART;
+      opts.bwsurl = bwsurl;
       this.createWallet(opts)
         .then(wallet => {
           return resolve(wallet);
