@@ -94,10 +94,10 @@
           <ion-input type="text" formControlName="derivationPath" [value]="importForm.value.derivationPath"></ion-input>
         </ion-item>
 
-        <ion-item [ngClass]="{'with-label': importForm.value.testnetEnabled}">
+        <!--ion-item [ngClass]="{'with-label': importForm.value.testnetEnabled}">
           <ion-label>Testnet</ion-label>
           <ion-toggle formControlName="testnetEnabled" (ionChange)="setDerivationPath()"></ion-toggle>
-        </ion-item>
+        </ion-item-->
 
         <label-tip *ngIf="importForm.value.testnetEnabled" type="warn">
           <span label-tip-title translate>Testnet Wallet</span>

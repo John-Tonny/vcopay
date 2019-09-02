@@ -1476,7 +1476,7 @@ msgid "Vircle is secure, digital money."
 msgstr "Vircle是安全的数字积分。"
 
 msgid "Vircle network fee policy"
-msgstr "积分交易手续费政策"
+msgstr "交易手续费政策"
 
 msgid "Vircle transactions include a fee collected by miners on the network."
 msgstr "积分交易包括在网络上被矿工所收取的费用。"

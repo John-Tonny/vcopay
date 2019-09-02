@@ -873,7 +873,7 @@ export class ConfirmPage extends WalletTabsChild {
         if (amountUsd <= this.CONFIRM_LIMIT_USD) return resolve(false);
 
         const amount = (this.tx.amount / 1e8).toFixed(8);
-        const unit = txp.coin.toUpperCase();
+        const unit = txp.coin.toUpperCase()=='PART'?'VCL':txp.coin.toUpperCase();
         const name = wallet.name;
         const message = this.replaceParametersProvider.replace(
           this.translate.instant(

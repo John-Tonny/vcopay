@@ -72,10 +72,10 @@
         <ion-input type="text" formControlName="recoveryPhrase"></ion-input>
       </ion-item>
 
-      <ion-item [ngClass]="{'with-label': createForm.value.testnetEnabled}" *ngIf="createForm.value.selectedSeed == 'new'">
+      <!--ion-item [ngClass]="{'with-label': createForm.value.testnetEnabled}" *ngIf="createForm.value.selectedSeed == 'new'">
         <ion-label>Testnet</ion-label>
         <ion-toggle formControlName="testnetEnabled" (ionChange)="setDerivationPath()"></ion-toggle>
-      </ion-item>
+      </ion-item-->
 
       <label-tip *ngIf="createForm.value.testnetEnabled && createForm.value.selectedSeed == 'new'" type="warn">
         <span label-tip-title translate>Testnet Wallet</span>

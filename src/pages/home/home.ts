@@ -388,12 +388,25 @@ export class HomePage {
       this.walletsBch = _.filter(this.wallets, (x: any) => {
         return x.credentials.coin == 'bch';
       });
-      this.walletsPart = _.filter(this.wallets, (x: any) => {
-        return x.credentials.coin == 'part' && x.baseUrl == BwsUrl.vircle;
-      });
-      this.walletsPart1 = _.filter(this.wallets, (x: any) => {
-        return x.credentials.coin == 'part' && x.baseUrl == BwsUrl.benyuan;
-      });
+
+      for (var id in BwsUrl) {
+        if(id == 'vircle'){
+          this.walletsPart = _.filter(this.wallets, (x: any) => {
+            return x.credentials.coin == 'part' && x.baseUrl == BwsUrl[id];
+          });
+          break;
+        }
+      }
+
+      for (id in BwsUrl) {
+        if(id == 'benyuan'){
+          this.walletsPart1 = _.filter(this.wallets, (x: any) => {
+            return x.credentials.coin == 'part' && x.baseUrl == BwsUrl[id];
+          });
+          break;
+        }
+      }
+
       this.updateAllWallets();
     },
     5000,
