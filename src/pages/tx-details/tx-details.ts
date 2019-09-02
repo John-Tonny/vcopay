@@ -15,6 +15,8 @@ import { TxConfirmNotificationProvider } from '../../providers/tx-confirm-notifi
 import { TxFormatProvider } from '../../providers/tx-format/tx-format';
 import { WalletProvider } from '../../providers/wallet/wallet';
 
+import {BwsUrl, ExplorerUrl} from '../../providers/persistence/persistence';
+
 @Component({
   selector: 'page-tx-details',
   templateUrl: 'tx-details.html'
@@ -66,9 +68,15 @@ export class TxDetailsPage {
       ? !this.config.confirmedTxsNotifications.enabled
       : true;
 
-    let defaults = this.configProvider.getDefaults();
-    this.blockexplorerUrl =
-      defaults.blockExplorerUrl[this.wallet.coin][this.getShortNetworkName()];
+    // let defaults = this.configProvider.getDefaults();
+
+    // this.blockexplorerUrl = defaults.blockExplorerUrl[this.wallet.coin][this.getShortNetworkName()];
+
+    for (var id in BwsUrl) {
+      if(BwsUrl[id] == this.wallet.baseUrl){
+        this.blockexplorerUrl = ExplorerUrl[id]
+      }
+    }
 
     this.txConfirmNotificationProvider.checkIfEnabled(this.txId).then(res => {
       this.txNotification = {
