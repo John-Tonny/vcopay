@@ -25,7 +25,7 @@
   "pushSenderId": "1020645376",
   "description": "A Secure Particl Wallet",
   "version": "5.5.0",
-  "androidVersion": "55000000",
+  "androidVersion": "10000000",
   "_extraCSS": null,
   "_enabledExtensions": {
     "coinbase": false,
