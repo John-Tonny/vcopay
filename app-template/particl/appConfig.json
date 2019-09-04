@@ -25,7 +25,7 @@
   "pushSenderId": "232519596896",
   "description": "A Secure Vircle Wallet",
   "version": "1.0",
-  "androidVersion": "55000000",
+  "androidVersion": "10000000",
   "_extraCSS": null,
   "_enabledExtensions": {
     "coinbase": false,
