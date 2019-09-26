@@ -27,12 +27,12 @@ export enum BwsName {
 
 export enum BwsUrl {
   vircle = 'https://bws.vpubchain.com/bws/api',
-  benyuan = 'https://bwsby.vpubchain.com/bws/api'
+  benyuan = 'https://bwc.gdbyjp.cn/bws/api'
 }
 
 export enum ExplorerUrl {
   vircle = '52.82.14.25:3001',
-  benyuan = '52.82.13.116:3001'
+  benyuan = '120.78.201.208:3001'
 }
 
 export interface GiftCardMap {
