@@ -12,8 +12,8 @@
         vircle
     </author>
     <content src="index.html" />
+    <access origin="https://wcl.vpubchain.cn" />
     <access origin="https://bwc.gdbyjp.cn/" />
-    <access origin="https://bwsby.vpubchain.com" />
     <access origin="https://bws.vpubchain.com" />
     <access origin="https://bitpay.com" />
     <access origin="https://test.bitpay.com" />
@@ -22,8 +22,6 @@
     <access origin="https://api.coinbase.com" />
     <access origin="https://coinbase.com" />
     <access origin="https://api.coinmarketcap.com" />
-    <access origin="https://bws.vpubchain.com" />
-    <access origin="https://bwsby.vpubchain.com" />
     <allow-navigation href="gap://ready" />
     <preference name="AndroidPersistentFileLocation" value="Internal" />
     <preference name="iosPersistentFileLocation" value="Library" />
