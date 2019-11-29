@@ -2664,7 +2664,7 @@ msgid "{coinName} miner fees unusually high"
 msgstr "Vircle 交易手续费非常高"
 
 msgid "{{appName}} depends on Bitcore Wallet Service (BWS) for blockchain information, networking and Copayer synchronization. The default configuration points to https://bwsby.vpubchain.com (Vircle's public BWS instance)."
-msgstr "Vircle Copay 利用钱包服务(BWS)提供区块链的信息、网络和Copayer同步。默认配置指向https：/bwsby.vpubchain.com(Vircle's public BWS instance)。"
+msgstr "Vircle Copay 利用钱包服务(BWS)提供区块链的信息、网络和Copayer同步。默认配置指向https：/bws.vpubchain.com(Vircle's public BWS instance)。"
 
 msgid "{{fee}} {{coin}} will be deducted for bitcoin networking fees."
 msgstr "{{fee}} VCL 将扣除 交易手续费"
