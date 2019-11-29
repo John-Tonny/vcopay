@@ -244,7 +244,7 @@ export class PaperWalletPage {
               if (err) return reject(err);
               let rawTxLength = testTx.serialize().length;
               this.feeProvider
-                .getCurrentFeeRate(balanceToSweep.coin, 'livenet')
+                .getCurrentFeeRate(balanceToSweep.coin, 'livenet', {'bwsurl': this.wallet.baseUrl})
                 .then((feePerKb: number) => {
                   opts.fee = Math.round((feePerKb * rawTxLength) / 2000);
                   this.wallet.buildTxFromPrivateKey(

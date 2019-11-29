@@ -435,7 +435,9 @@ export class ConfirmPage extends WalletTabsChild {
           tx.network,
           this.usingMerchantFee
             ? maxAllowedMerchantFee[wallet.coin]
-            : this.tx.feeLevel
+            : this.tx.feeLevel,
+            {'bwsurl': wallet.baseUrl}
+
         )
         .then(feeRate => {
           let msg;

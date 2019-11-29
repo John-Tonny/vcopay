@@ -165,7 +165,7 @@ export class ConfigProvider {
 
       // Bitcore wallet service URL
       bws: {
-        url: 'https://bwsby.vpubchain.com/bws/api'
+        url: 'https://bws.vpubchain.com/bws/api'
       },
 
       download: {

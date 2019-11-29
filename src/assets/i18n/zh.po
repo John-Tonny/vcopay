@@ -1466,6 +1466,9 @@ msgstr "久零钱包"
 msgid "Benyuan Wallets"
 msgstr "本元钱包"
 
+msgid "Wenchuang Wallets"
+msgstr "文创钱包"
+
 msgid "Vircle is a currency."
 msgstr "Vircle是一种积分。"
 

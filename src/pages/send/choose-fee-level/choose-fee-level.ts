@@ -71,7 +71,7 @@ export class ChooseFeeLevelPage {
     this.feeOpts = Object.keys(this.feeProvider.getFeeOpts());
     this.loadingFee = true;
     this.feeProvider
-      .getFeeLevels(this.coin)
+      .getFeeLevels(this.coin, {})
       .then(levels => {
         this.loadingFee = false;
         if (_.isEmpty(levels)) {

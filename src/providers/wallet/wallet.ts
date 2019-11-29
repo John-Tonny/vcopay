@@ -899,7 +899,7 @@ export class WalletProvider {
   public getMinFee(wallet, nbOutputs?: number): Promise<any> {
     return new Promise((resolve, reject) => {
       this.feeProvider
-        .getFeeLevels(wallet.coin)
+        .getFeeLevels(wallet.coin, {'bwsurl': wallet.baseUrl})
         .then(data => {
           const normalLevelRate = _.find(data.levels[wallet.network], level => {
             return level.level === 'normal';

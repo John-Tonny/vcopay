@@ -48,12 +48,13 @@ export class FeeProvider {
   public getFeeRate(
     coin: string,
     network: string,
-    feeLevel: string
+    feeLevel: string,
+    opts?
   ): Promise<any> {
     return new Promise((resolve, reject) => {
       if (feeLevel == 'custom') return resolve();
       network = network || 'livenet';
-      this.getFeeLevels(coin)
+      this.getFeeLevels(coin, opts)
         .then(response => {
           let feeLevelRate;
 
@@ -93,9 +94,9 @@ export class FeeProvider {
     });
   }
 
-  public getCurrentFeeRate(coin: string, network: string): Promise<any> {
+  public getCurrentFeeRate(coin: string, network: string, opts?): Promise<any> {
     return new Promise((resolve, reject) => {
-      this.getFeeRate(coin, network, this.getCurrentFeeLevel())
+      this.getFeeRate(coin, network, this.getCurrentFeeLevel(), opts)
         .then((data: number) => {
           return resolve(data);
         })
@@ -105,7 +106,7 @@ export class FeeProvider {
     });
   }
 
-  public getFeeLevels(coin: string): Promise<any> {
+  public getFeeLevels(coin: string, opts?): Promise<any> {
     return new Promise((resolve, reject) => {
       coin = coin || 'btc';
 
@@ -116,7 +117,7 @@ export class FeeProvider {
         return resolve({ levels: this.cache.data, fromCache: true });
       }
 
-      let walletClient = this.bwcProvider.getClient(null, {});
+      let walletClient = this.bwcProvider.getClient(null, opts );
 
       walletClient.getFeeLevels(
         coin,
@@ -150,7 +151,7 @@ export class FeeProvider {
 
   public getEstimatedFee(wallet, txp): Promise<any> {
     return new Promise((resolve, reject) => {
-      this.getCurrentFeeRate(wallet.coin, wallet.network)
+      this.getCurrentFeeRate(wallet.coin, wallet.network, {'bwsurl': wallet.baseUrl})
         .then(feePerKB => {
           let txSize = this.getEstimatedSize(wallet, txp);
           let fee = (feePerKB * txSize) / 1000;

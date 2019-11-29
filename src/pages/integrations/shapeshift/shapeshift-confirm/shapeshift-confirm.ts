@@ -235,7 +235,8 @@ export class ShapeshiftConfirmPage {
         .getFeeRate(
           this.fromWallet.coin,
           this.network,
-          this.configWallet.settings.feeLevel || 'normal'
+          this.configWallet.settings.feeLevel || 'normal',
+            {'bwsurl': this.fromWallet.baseUrl}
         )
         .then(feeRate => {
           this.onGoingProcessProvider.set('retrievingInputs');

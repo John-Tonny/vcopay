@@ -228,7 +228,7 @@ export class CoinbaseProvider {
     // Fee Normal for a single transaction (450 bytes)
     var txNormalFeeKB = 450 / 1000;
     this.feeProvider
-      .getFeeRate('btc', 'livenet', 'normal')
+      .getFeeRate('btc', 'livenet', 'normal', {})
       .then(feePerKb => {
         var feeBTC = ((feePerKb * txNormalFeeKB) / 100000000).toFixed(8);
 
