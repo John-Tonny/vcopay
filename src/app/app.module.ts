@@ -21,7 +21,7 @@ import { NgxBarcodeModule } from 'ngx-barcode';
 import { NgxQRCodeModule } from 'ngx-qrcode2';
 
 /* Copay App */
-import env from '../environments';
+import env from '../environments/dev';
 import { CopayApp } from './app.component';
 
 import { PAGES } from './../pages/pages';

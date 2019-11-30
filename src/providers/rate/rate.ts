@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import * as _ from 'lodash';
-import env from '../../environments';
+import env from '../../environments/dev';
 import { Logger } from '../../providers/logger/logger';
 
 @Injectable()
