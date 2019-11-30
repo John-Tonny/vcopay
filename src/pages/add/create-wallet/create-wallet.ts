@@ -20,7 +20,6 @@ import {
 
 import * as _ from 'lodash';
 
-
 @Component({
   selector: 'page-create-wallet',
   templateUrl: 'create-wallet.html'

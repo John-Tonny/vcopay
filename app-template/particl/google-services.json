@@ -1,16 +1,16 @@
 {
   "project_info": {
     "project_number": "232519596896",
-    "firebase_url": "https://vircle-copay.firebaseio.com",
-    "project_id": "vircle-copay",
-    "storage_bucket": "vircle-copay.appspot.com"
+    "firebase_url": "https://haloha-copay.firebaseio.com",
+    "project_id": "haloha-copay",
+    "storage_bucket": "haloha-copay.appspot.com"
   },
   "client": [
     {
       "client_info": {
         "mobilesdk_app_id": "1:232519596896:android:aa5d5b9701248680",
         "android_client_info": {
-          "package_name": "io.vircle.copay"
+          "package_name": "io.haloha.copay"
         }
       },
       "oauth_client": [
@@ -18,7 +18,7 @@
           "client_id": "232519596896-2k4uirb9deo8out97fok6tebccv6vc2f.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "io.vircle.copay",
+            "package_name": "io.haloha.copay",
             "certificate_hash": "d58839816df6fa35c570428f32565a5a4c939d55"
           }
         },
@@ -47,7 +47,7 @@
               "client_id": "232519596896-cj27r5st2fqktc66c0o524h8kfsrp8fq.apps.googleusercontent.com",
               "client_type": 2,
               "ios_info": {
-                "bundle_id": "io.vircle.copay"
+                "bundle_id": "io.haloha.copay"
               }
             }
           ]

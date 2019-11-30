@@ -8,7 +8,9 @@ const env: EnvironmentSchema = {
   // Start with production config,
   ...production,
   // override for development:
-  name: 'development'
+  name: 'development',
+  enableAnimations: true,
+  activateScanner: true
 };
 
 export default env;

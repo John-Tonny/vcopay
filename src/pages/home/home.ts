@@ -96,6 +96,10 @@ export class HomePage {
   private onResumeSubscription: Subscription;
   private onPauseSubscription: Subscription;
 
+  public showWenchuang = true;
+  public showBenyuan = true;
+  public showVircle = true;
+
   constructor(
     private plt: Platform,
     private navCtrl: NavController,

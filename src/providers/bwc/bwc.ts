@@ -41,7 +41,9 @@ export class BwcProvider {
 
     // note opts use `bwsurl` all lowercase;
     let bwc = new BWC({
-      baseUrl: opts.bwsurl || 'https://bws.vpubchain.com/bws/api',
+      baseUrl: opts.bwsurl || 'https://wcl.vpubchain.cn/bws/api',
+      // baseUrl: opts.bwsurl || 'https://bwc.gdbyjp.cn/bws/api',
+      // baseUrl: opts.bwsurl || 'https://bws.vpubchain.com/bws/api',
       verbose: opts.verbose,
       timeout: 100000,
       transports: ['polling']

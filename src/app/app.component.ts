@@ -228,9 +228,9 @@ export class CopayApp {
     this.emailNotificationsProvider.init(); // Update email subscription if necessary
     this.initPushNotifications();
 
-    // var bb: boolean = false;
+    var bb: boolean = false;
 
-    if (profile) {
+    if (bb && profile) {
       this.logger.info('Profile exists.');
 
       this.rootPage = TabsPage;

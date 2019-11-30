@@ -569,8 +569,8 @@ msgstr "创建一个新的钱包"
 msgid "Create a new wallet to start using this app."
 msgstr "创建一个新钱包开始使用此应用程序。"
 
-msgid "Create vircle wallet"
-msgstr "创建vircle的钱包"
+msgid "Create a new wallet"
+msgstr "创建新的钱包"
 
 msgid "Create personal wallet"
 msgstr "创建个人钱包"

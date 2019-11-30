@@ -133,21 +133,26 @@ export class TourPage {
 
   public selectBwsURL(): void {
     var nums: number = 0;
-    for (var _ in BwsUrl) {
+    var bwsurl = '';
+    for (var id in BwsUrl) {
       nums ++;
+      if (nums == 1) {
+        bwsurl = BwsUrl[id]
+      }
     }
-    nums = 0;
+    /* nums = 0;
     for (var _ in BwsName) {
       nums ++;
-    }
+    }*/
     if(nums>1) {
       this.myAlert();
     }else{
-      this.createDefaultWallet(BwsUrl[0]);
+      this.createDefaultWallet(bwsurl);
     }
   }
 
-  public createDefaultWallet(bwsurl): void {
+  public createDefaultWallet(bwsurl: string): void {
+    console.log(bwsurl)
     this.onGoingProcessProvider.set('creatingWallet');
     this.profileProvider
       .createDefaultWallet(bwsurl)

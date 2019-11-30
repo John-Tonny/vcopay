@@ -1,8 +1,8 @@
 {
-  "name": "vircle-copay",
-  "description": "A Secure Vircle Wallet",
+  "name": "haloha-copay",
+  "description": "A Secure Haloha Wallet",
   "author": "BitPay",
-  "version": "5.5.0",
+  "version": "1.0.0",
   "keywords": [
     "bitcoin",
     "wallet",
@@ -12,7 +12,7 @@
     "bitcore"
   ],
   "main": "electron/main.js",
-  "title": "Vircle Copay",
+  "title": "Haloha Copay",
   "user-agent": "%name %ver (%osinfo)",
   "webkit": {
     "page-cache": false,
@@ -21,14 +21,14 @@
   },
   "dom_storage_quota": 200,
   "id": "jid1-x7bV5evAaI1P9Q",
-  "homepage": "https://github.com/vircle/copay",
+  "homepage": "https://github.com/haloha/copay",
   "license": "MIT",
   "repository": {
-    "url": "git://github.com/vircle/copay.git",
+    "url": "git://github.com/haloha/copay.git",
     "type": "git"
   },
   "bugs": {
-    "url": "https://github.com/vircle/copay/issues"
+    "url": "https://github.com/haloha/copay/issues"
   },
   "scripts": {
     "postinstall": "sed -i  -e \"s/.*require(...\\/...);//g\" node_modules/asn1.js-rfc5280/index.js && npm run e2e:update && npm run env:dev && npm run prompt",
@@ -101,8 +101,8 @@
     "verify:bitpay-desktop": "gpg --verify dist/BitPay-linux.zip.sig dist/BitPay-linux.zip; gpg --verify dist/BitPay.exe.sig dist/BitPay.exe; gpg --verify dist/BitPay.dmg.sig dist/BitPay.dmg"
   },
   "build": {
-    "appId": "io.vircle.copay.desktop2",
-    "productName": "Vircle Copay",
+    "appId": "io.haloha.copay.desktop2",
+    "productName": "Haloha Copay",
     "afterPack": "./electron/afterPack.js",
     "files": [
       "./electron/main.js",
@@ -115,12 +115,12 @@
         "bitcoin",
         "bitcoincash",
         "bchtest",
-        "Vircle Copay"
+        "Haloha Copay"
       ]
     },
     "mac": {
       "category": "public.app-category.finance",
-      "icon": "resources/Vircle Copay/mac/app.icns",
+      "icon": "resources/Haloha Copay/mac/app.icns",
       "artifactName": "${productName}.${ext}",
       "extendInfo": {
         "NSCameraUsageDescription": "Scan a Bitcoin Address directly to your Wallet and send funds to it"
@@ -131,22 +131,22 @@
     },
     "mas": {
       "identity": "BitPay, Inc. (884JRH5R93)",
-      "entitlements": "./vircle-copay-entitlements.mas.plist",
-      "provisioningProfile": "./vircle-copay-embedded.provisionprofile"
+      "entitlements": "./haloha-copay-entitlements.mas.plist",
+      "provisioningProfile": "./haloha-copay-embedded.provisionprofile"
     },
     "win": {
       "target": [
         "appx"
       ],
-      "icon": "resources/Vircle Copay/windows/icon.ico",
+      "icon": "resources/Haloha Copay/windows/icon.ico",
       "artifactName": "${productName}.${ext}"
     },
     "appx": {
-      "identityName": "Copay-SecureVircleWallet",
+      "identityName": "Copay-SecureHalohaWallet",
       "publisher": "CN=F89609D1-EB3E-45FD-A58A-C2E3895FCE7B",
       "publisherDisplayName": "BitPay Inc.",
-      "applicationId": "VircleCopayWallet",
-      "displayName": "Copay - Secure Vircle Wallet"
+      "applicationId": "HalohaCopayWallet",
+      "displayName": "Copay - Secure Haloha Wallet"
     },
     "linux": {
       "target": [
@@ -320,7 +320,7 @@
       "cordova-custom-config": {},
       "cordova-plugin-customurlscheme-ng": {
         "URL_SCHEME": "particl",
-        "SECOND_URL_SCHEME": "vircle-copay",
+        "SECOND_URL_SCHEME": "haloha-copay",
         "THIRD_URL_SCHEME": "particl-bitpay",
         "ANDROID_SCHEME": " ",
         "ANDROID_HOST": " ",
