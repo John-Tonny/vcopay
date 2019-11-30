@@ -21,20 +21,20 @@ export interface FeedbackValues {
 }
 
 export enum BwsName {
-  vircle = '久零',
-  benyuan = '本元',
+  // vircle = '久零',
+  // benyuan = '本元',
   wenchuang = '文创'
 }
 
 export enum BwsUrl {
-  vircle = 'https://bws.vpubchain.com/bws/api',
-  benyuan = 'https://bwc.gdbyjp.cn/bws/api',
+  // vircle = 'https://bws.vpubchain.com/bws/api',
+  // benyuan = 'https://bwc.gdbyjp.cn/bws/api',
   wenchuang = 'https://wcl.vpubchain.cn/bws/api'
 }
 
 export enum ExplorerUrl {
-  vircle = '52.82.14.25:3001',
-  benyuan = '120.78.201.208:3001',
+  // vircle = '52.82.14.25:3001',
+  // benyuan = '120.78.201.208:3001',
   wenchuang = '120.24.96.245:3001'
 }
 

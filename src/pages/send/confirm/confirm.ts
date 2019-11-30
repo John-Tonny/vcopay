@@ -635,7 +635,7 @@ export class ConfirmPage extends WalletTabsChild {
         coinName = 'Bitcoin Cash (BCH)';
         break;
       case 'part':
-        coinName = 'Vircle (VCL)';
+        coinName = 'Vircle (WCL)';
         break;
       default:
         coinName = 'Bitcoin (BTC)';
@@ -875,7 +875,7 @@ export class ConfirmPage extends WalletTabsChild {
         if (amountUsd <= this.CONFIRM_LIMIT_USD) return resolve(false);
 
         const amount = (this.tx.amount / 1e8).toFixed(8);
-        const unit = txp.coin.toUpperCase()=='PART'?'VCL':txp.coin.toUpperCase();
+        const unit = txp.coin.toUpperCase()=='PART'?'WCL':txp.coin.toUpperCase();
         const name = wallet.name;
         const message = this.replaceParametersProvider.replace(
           this.translate.instant(

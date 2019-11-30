@@ -374,7 +374,7 @@ msgstr ""
 msgid "Cold Staking Setup"
 msgstr ""
 
-msgid "Cold staking allows you to get interest on your VCL coins."
+msgid "Cold staking allows you to get interest on your WCL coins."
 msgstr ""
 
 msgid "Color"
@@ -2156,7 +2156,7 @@ msgstr ""
 msgid "This information is available at the website."
 msgstr ""
 
-msgid "This means you will stop receiving interest on your VCL coins."
+msgid "This means you will stop receiving interest on your WCL coins."
 msgstr ""
 
 msgid "This password cannot be recovered. If this password is lost, funds can only be recovered by reimporting your 12-word recovery phrase."
@@ -2588,7 +2588,7 @@ msgstr "Sie konnte die Transaktion später in Ihren Brieftasche-Details anmelden
 msgid "You should not set a fee higher than {{maxFeeRecommended}} satoshis/byte."
 msgstr "Du solltest keine Gebür über {{maxFeeRecommended}} satoshis/byte setzen."
 
-msgid "You wallet is generating interest on your VCL coins and you are helping to secure the Vircle network at the same time!"
+msgid "You wallet is generating interest on your WCL coins and you are helping to secure the Vircle network at the same time!"
 msgstr ""
 
 msgid "Your BitPay Card is ready. Add funds to your card to start using it at stores and ATMs worldwide."

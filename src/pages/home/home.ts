@@ -571,7 +571,7 @@ export class HomePage {
         // johntonny
         let pos = wallet.status.totalBalanceStr.indexOf('PART');
         if(pos>=0){
-          wallet.status.totalBalanceStr = wallet.status.totalBalanceStr.substring(0,pos) + 'VCL';
+          wallet.status.totalBalanceStr = wallet.status.totalBalanceStr.substring(0,pos) + 'WCL';
         }
 
         // Update recent transactions and txps
@@ -662,7 +662,7 @@ export class HomePage {
             // johntonny
             let pos = wallet.status.totalBalanceStr.indexOf('PART');
             if(pos>=0){
-              wallet.status.totalBalanceStr = wallet.status.totalBalanceStr.substring(0,pos) + 'VCL';
+              wallet.status.totalBalanceStr = wallet.status.totalBalanceStr.substring(0,pos) + 'WCL';
             }
 
             return resolve();

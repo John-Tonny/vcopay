@@ -61,7 +61,7 @@ export class TxFormatProvider {
     if (isNaN(satoshis)) return undefined;
     // johntonny
     if (coin == 'part'){
-      coin = 'vcl';
+      coin = 'wcl';
     }
     return this.formatAmount(satoshis) + ' ' + coin.toUpperCase();
   }

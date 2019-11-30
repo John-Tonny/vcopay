@@ -44,7 +44,7 @@ export class MultipleOutputsPage {
       // johntonny
       let pos =output.amountStr.indexOf("PART");
       if(pos>=0){
-        output.amountStr = output.amountStr.substring(0,pos)+'VCL';
+        output.amountStr = output.amountStr.substring(0,pos)+'WCL';
       }
     });
 

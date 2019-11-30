@@ -72,8 +72,8 @@
 
             <br>
             <span *ngIf="item.amountToShow">{{'Amount:' | translate}} </span>
-            <!--span *ngIf="item.amountToShow">{{item.amountToShow}} {{wallet.coin=='part'?'vcl':wallet.coin | uppercase}} ({{item.altAmountStr}})</span-->
-            <span *ngIf="item.amountToShow">{{item.amountToShow}} {{wallet.coin=='part'?'vcl':wallet.coin | uppercase}} </span>
+            <!--span *ngIf="item.amountToShow">{{item.amountToShow}} {{wallet.coin=='part'?'wcl':wallet.coin | uppercase}} ({{item.altAmountStr}})</span-->
+            <span *ngIf="item.amountToShow">{{item.amountToShow}} {{wallet.coin=='part'?'wcl':wallet.coin | uppercase}} </span>
             <span *ngIf="!item.amountToShow" class="warning">{{'Please, enter the amount' | translate}}</span>
           </ion-list>
         </div>

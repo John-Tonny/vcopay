@@ -57,11 +57,11 @@ export class CustomAmountPage {
 
       // johntonny
       if(parsedAmount.amountUnitStr == 'part'){
-        parsedAmount.amountUnitStr = 'vcl';
+        parsedAmount.amountUnitStr = 'wcl';
       }
 
       if(parsedAmount.amountUnitStr == 'PART'){
-        parsedAmount.amountUnitStr = 'VCL';
+        parsedAmount.amountUnitStr = 'WCL';
       }
       // Amount in USD or BTC
       const _amount = parsedAmount.amount;

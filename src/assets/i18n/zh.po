@@ -33,19 +33,19 @@ msgid "5-star ratings help us get the Vircle Wallet into more hands, and more us
 msgstr "五星级的评价有助于我们将VIRCLE钱包让更多用户使用，更多的用户意味着更多的资源可以投入到应用中！"
 
 msgid "A total of {{amountAboveMaxSizeStr}} {{coin}} were excluded. The maximum size allowed for a transaction was exceeded."
-msgstr "总数为{{amountAboveMaxSizeStr}} VCL 的交易已被拒绝。超过了交易允许的最大额度。"
+msgstr "总数为{{amountAboveMaxSizeStr}} WCL 的交易已被拒绝。超过了交易允许的最大额度。"
 
 msgid "A total of {{amountBelowFeeStr}} {{coin}} were excluded. These funds come from UTXOs smaller than the network fee provided."
-msgstr "总数为{{amountBelowFeeStr}} VCL 已被拒绝。UTXOs积分少于提供的交易手续费。"
+msgstr "总数为{{amountBelowFeeStr}} WCL 已被拒绝。UTXOs积分少于提供的交易手续费。"
 
 msgid "A total of {{amountStr}} ({{fiatAmount | number:'1.2-2'}} {{currencyIsoCode}}) will be exchanged for {{withdrawalStr}} ({{fiatWithdrawal | number:'1.2-2'}} {{currencyIsoCode}})."
 msgstr "总共{{fiatAmount | number:'1.2-2'}} {{currencyIsoCode}}将被替换为{{withdrawalStr} ({{fiatwithdraw | number:'1.2-2'}} {{currencyIsoCode}})"
 
 msgid "A total of {{fee}} {{coin}} were excluded. The maximum size allowed for a transaction was exceeded."
-msgstr "总数为 {{fee}} VCL 的交易已被拒绝。超过了交易允许的最大额度。"
+msgstr "总数为 {{fee}} WCL 的交易已被拒绝。超过了交易允许的最大额度。"
 
 msgid "A total of {{fee}} {{coin}} were excluded. These funds come from UTXOs smaller than the network fee provided."
-msgstr "总数为 {{fee}} VCL 的交易已被拒绝。UTXOs积分少于提供的交易手续费。"
+msgstr "总数为 {{fee}} WCL 的交易已被拒绝。UTXOs积分少于提供的交易手续费。"
 
 msgid "About"
 msgstr "关于"
@@ -374,7 +374,7 @@ msgstr "冷收益"
 msgid "Cold Staking Setup"
 msgstr "冷收益设置"
 
-msgid "Cold staking allows you to get interest on your VCL coins."
+msgid "Cold staking allows you to get interest on your WCL coins."
 msgstr "冷收益让您获得积分"
 
 msgid "Color"
@@ -465,7 +465,7 @@ msgid "Copied to clipboard"
 msgstr "已复制到剪贴板"
 
 msgid "Copied {coin} address"
-msgstr "复制 VCL 地址"
+msgstr "复制 WCL 地址"
 
 msgid "Copied: {claimCode}"
 msgstr "复制: {claimCode}"
@@ -2117,11 +2117,11 @@ msgstr "支付已被创建者移除"
 msgid "The private key of this wallet is not available. The export allows to check the wallet balance, transaction history, and create spend proposals from the export. However, does not allow to approve (sign) proposals, so funds will not be accessible from the export."
 msgstr "警告：此钱包的私钥不可用。导出允检查钱包的积分、交易的历史记录，并导出创建的支付提议。但是，但不允许批准(签署) 提案，因此积分将不会导出。"
 
-msgid "The purchase amount is limited to {maxAmount} VCL per day. Please modify your amount."
-msgstr "购买金额限制为 {maxAmount} VCL /每天。请修改您的金额。"
+msgid "The purchase amount is limited to {maxAmount} WCL per day. Please modify your amount."
+msgstr "购买金额限制为 {maxAmount} WCL /每天。请修改您的金额。"
 
-msgid "The purchase amount must be at least {minAmount} VCL. Please modify your amount."
-msgstr "购买金额必须至少为 {minAmount} VCL。请修改您的金额。"
+msgid "The purchase amount must be at least {minAmount} WCL. Please modify your amount."
+msgstr "购买金额必须至少为 {minAmount} WCL。请修改您的金额。"
 
 msgid "The request could not be understood by the server"
 msgstr "服务器不理解此请求"
@@ -2165,7 +2165,7 @@ msgstr "*此字段仅适用于先前版本 (不再支持) 的用户，设置密�
 msgid "This information is available at the website."
 msgstr "这些信息可在网站上查阅。"
 
-msgid "This means you will stop receiving interest on your VCL coins."
+msgid "This means you will stop receiving interest on your WCL coins."
 msgstr "这意味着您将停止接收Vircle积分的相关信息"
 
 msgid "This password cannot be recovered. If this password is lost, funds can only be recovered by reimporting your 12-word recovery phrase."
@@ -2562,7 +2562,7 @@ msgid "Yes, skip"
 msgstr "是的，请跳过"
 
 msgid "You are trying to send ({amount} {coin}) more than what your wallet contains. Please enter a lower amount or send max."
-msgstr "您尝试发送 ({amount} VCL 超过您的钱包的金额。请输入较低的金额或发送金额的最大值。"
+msgstr "您尝试发送 ({amount} WCL 超过您的钱包的金额。请输入较低的金额或发送金额的最大值。"
 
 msgid "You can back up your wallet later from your wallet settings."
 msgstr "以后您可以从钱包设置中备份您的钱包。"
@@ -2600,7 +2600,7 @@ msgstr "稍后你可以在你的钱包详细信息中签下这笔交易。"
 msgid "You should not set a fee higher than {{maxFeeRecommended}} satoshis/byte."
 msgstr "你不应设置高于 {{maxFeeRecommended}} satoshis/字节 的交易手续费。"
 
-msgid "You wallet is generating interest on your VCL coins and you are helping to secure the Vircle network at the same time!"
+msgid "You wallet is generating interest on your WCL coins and you are helping to secure the Vircle network at the same time!"
 msgstr "您的钱包正在生成您的VCL积分，你同时亦在帮助维护Vircle 网络的安全。"
 
 msgid "Your BitPay Card is ready. Add funds to your card to start using it at stores and ATMs worldwide."
@@ -2667,7 +2667,7 @@ msgid "{{appName}} depends on Bitcore Wallet Service (BWS) for blockchain inform
 msgstr "Vircle Copay 利用钱包服务(BWS)提供区块链的信息、网络和Copayer同步。默认配置指向https：/bws.vpubchain.com(Vircle's public BWS instance)。"
 
 msgid "{{fee}} {{coin}} will be deducted for bitcoin networking fees."
-msgstr "{{fee}} VCL 将扣除 交易手续费"
+msgstr "{{fee}} WCL 将扣除 交易手续费"
 
 msgid "{{updatingTxHistoryProgress}} transactions downloaded"
 msgstr "下载 {{updatingTxHistoryProgress}} 交易"

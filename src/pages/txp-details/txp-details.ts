@@ -414,7 +414,7 @@ export class TxpDetailsPage {
         // johntonny
         let pos =this.tx.feeStr.indexOf("PART");
         if(pos>=0){
-          this.tx.feeStr = this.tx.feeStr.substring(0,pos)+'VCL';
+          this.tx.feeStr = this.tx.feeStr.substring(0,pos)+'WCL';
         }
       })
       .catch(err => {

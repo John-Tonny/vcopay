@@ -218,7 +218,7 @@ export class TxDetailsPage {
         // johntonny
         let pos =this.btx.feeStr.indexOf("PART");
         if(pos>=0){
-          this.btx.feeStr = this.btx.feeStr.substring(0,pos)+'VCL';
+          this.btx.feeStr = this.btx.feeStr.substring(0,pos)+'WCL';
         }
 
         this.walletProvider

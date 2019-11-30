@@ -301,7 +301,7 @@ export class WalletDetailsPage extends WalletTabsChild {
         // johntonny
         let pos = this.wallet.status.totalBalanceStr.indexOf('PART');
         if(pos>=0){
-          this.wallet.status.totalBalanceStr = this.wallet.status.totalBalanceStr.substring(0,pos) + 'VCL';
+          this.wallet.status.totalBalanceStr = this.wallet.status.totalBalanceStr.substring(0,pos) + 'WCL';
         }
 
       })
