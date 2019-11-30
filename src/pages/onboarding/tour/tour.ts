@@ -133,17 +133,20 @@ export class TourPage {
 
   public selectBwsURL(): void {
     var nums: number = 0;
-    for (var _ in BwsUrl) {
+    var bwsurl: string = '';
+    for (var id in BwsUrl) {
       nums ++;
+      bwsurl = BwsUrl[id]
     }
+    /*
     nums = 0;
     for (var _ in BwsName) {
       nums ++;
-    }
+    }*/
     if(nums>1) {
       this.myAlert();
     }else{
-      this.createDefaultWallet(BwsUrl[0]);
+      this.createDefaultWallet(bwsurl);
     }
   }
 
