@@ -207,7 +207,7 @@ msgid "Are you sure?"
 msgstr "是否确认？"
 
 msgid "Available"
-msgstr "可用空间"
+msgstr "可用积分"
 
 msgid "Average confirmation time"
 msgstr "平均确认时间"

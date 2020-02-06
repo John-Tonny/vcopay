@@ -12,6 +12,7 @@
         vircle
     </author>
     <content src="index.html" />
+    <access origin="https://devbws.vpubchain.net" />
     <access origin="https://wcl.vpubchain.cn" />
     <access origin="https://bwc.gdbyjp.cn/" />
     <access origin="https://bws.vpubchain.com" />

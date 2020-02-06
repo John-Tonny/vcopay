@@ -60,6 +60,7 @@ export class HomePage {
   public walletsPart;
   public walletsPart1;
   public walletsPart2;
+  public walletsPart3;
   public cachedBalanceUpdateOn: string;
   public recentTransactionsEnabled: boolean;
   public txps;
@@ -85,6 +86,7 @@ export class HomePage {
   public showReorderPart: boolean;
   public showReorderPart1: boolean;
   public showReorderPart2: boolean;
+  public showReorderPart3: boolean;
   public showIntegration;
   public hideHomeIntegrations: boolean;
   public showGiftCards: boolean;
@@ -99,6 +101,8 @@ export class HomePage {
   public showWenchuang = true;
   public showBenyuan = true;
   public showVircle = true;
+  public showDevtest = true;
+
 
   constructor(
     private plt: Platform,
@@ -135,6 +139,7 @@ export class HomePage {
     this.showReorderPart = false;
     this.showReorderPart1 = false;
     this.showReorderPart2 = false;
+    this.showReorderPart3 = false;
     this.zone = new NgZone({ enableLongStackTrace: false });
     this.events.subscribe('Home/reloadStatus', () => {
       this._willEnter();
@@ -417,6 +422,15 @@ export class HomePage {
       for (id in BwsUrl) {
         if(id == 'wenchuang'){
           this.walletsPart2 = _.filter(this.wallets, (x: any) => {
+            return x.credentials.coin == 'part' && x.baseUrl == BwsUrl[id];
+          });
+          break;
+        }
+      }
+
+      for (id in BwsUrl) {
+        if(id == 'devtest'){
+          this.walletsPart3 = _.filter(this.wallets, (x: any) => {
             return x.credentials.coin == 'part' && x.baseUrl == BwsUrl[id];
           });
           break;
@@ -734,7 +748,7 @@ export class HomePage {
   }
 
   public goToWalletDetails(wallet): void {
-    if (this.showReorderBtc || this.showReorderBch || this.showReorderPart || this.showReorderPart1 || this.showReorderPart2)
+    if (this.showReorderBtc || this.showReorderBch || this.showReorderPart || this.showReorderPart1 || this.showReorderPart2 || this.showReorderPart3)
       return;
     this.events.unsubscribe('finishIncomingDataMenuEvent');
     this.events.unsubscribe('bwsEvent');
@@ -792,6 +806,10 @@ export class HomePage {
     this.showReorderPart2 = !this.showReorderPart2;
   }
 
+  public reorderPart3(): void {
+    this.showReorderPart3 = !this.showReorderPart3;
+  }
+
   public reorderWalletsBtc(indexes): void {
     let element = this.walletsBtc[indexes.from];
     this.walletsBtc.splice(indexes.from, 1);
@@ -836,6 +854,16 @@ export class HomePage {
       this.profileProvider.setWalletOrder(wallet.id, index);
     });
   }
+
+  public reorderWalletsPart3(indexes): void {
+    let element = this.walletsPart3[indexes.from];
+    this.walletsPart3.splice(indexes.from, 1);
+    this.walletsPart3.splice(indexes.to, 0, element);
+    _.each(this.walletsPart3, (wallet, index: number) => {
+      this.profileProvider.setWalletOrder(wallet.id, index);
+    });
+  }
+
 
   public openTxpModal(tx): void {
     let modal = this.modalCtrl.create(

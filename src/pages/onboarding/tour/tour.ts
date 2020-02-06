@@ -152,7 +152,7 @@ export class TourPage {
   }
 
   public createDefaultWallet(bwsurl: string): void {
-    console.log(bwsurl)
+    // console.log(bwsurl)
     this.onGoingProcessProvider.set('creatingWallet');
     this.profileProvider
       .createDefaultWallet(bwsurl)
