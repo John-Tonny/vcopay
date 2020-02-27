@@ -23,22 +23,25 @@ export interface FeedbackValues {
 export enum BwsName {
   // vircle = '久零',
   // benyuan = '本元',
-  // wenchuang = '文创'
+  wenchuang = '文创'
+  // verygood = '六维',
   devtest = '测试'
 }
 
 export enum BwsUrl {
   // vircle = 'https://bws.vpubchain.com/bws/api',
   // benyuan = 'https://bwc.gdbyjp.cn/bws/api',
-  // wenchuang = 'https://wcl.vpubchain.cn/bws/api'
-  devtest = 'https://devbws.vpubchain.net/bws/api'
+  wenchuang = 'https://wcl.vpubchain.cn/bws/api'
+  // verygoog = 'https://wcl.vpubchain.cn/bws/api'
+  //devtest = 'https://devbws.vpubchain.net/bws/api'
 }
 
 export enum ExplorerUrl {
   // vircle = '52.82.14.25:3001',
   // benyuan = '120.78.201.208:3001',
-  // wenchuang = '120.24.96.245:3001'
-  devtest = '47.104.25.28:3001'
+  wenchuang = '120.24.96.245:3001'
+  // verygood = '39.98.37.206:3001'
+  //devtest = '47.104.25.28:3001'
 }
 
 export interface GiftCardMap {
