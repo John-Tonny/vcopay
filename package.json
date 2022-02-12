@@ -261,7 +261,7 @@
     "@types/lodash": "4.14.104",
     "@types/node": "7.0.61",
     "@types/papaparse": "4.1.33",
-    "ajv": "6.2.0",
+    "ajv": "6.12.3",
     "archiver": "2.1.1",
     "cached-path-relative": "1.0.2",
     "codecov": "3.1.0",
